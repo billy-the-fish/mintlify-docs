@@ -4,7 +4,8 @@ excerpt: Improve database performance with hypertables, time bucketing, compress
 products: [cloud, self_hosted, mst]
 content_group: Getting started
 ---
-import { CLOUD_LONG, SERVICE_LONG, SERVICE_SHORT, TIGER_POSTGRES, HYPERCORE, PG, TIMESCALE_DB, HYPERTABLE, CHUNK, COMPANY, CONSOLE, HA_REPLICA, ROWSTORE, COLUMNSTORE, CAGG, TIME_BUCKET_CAP, TIME_BUCKET, SCALE, ENTERPRISE, PRICING_PLAN } from '/snippets/variables.mdx';
+
+import { CAGG, COMPANY, CONSOLE, ENTERPRISE, HA_REPLICA,  PRICING_PLAN, SCALE, SERVICE_LONG, SERVICE_SHORT, TIGER_POSTGRES, TIME_BUCKET, TIME_BUCKET_CAP } from '/snippets/vars.mdx';
 
 import HASetup from '/snippets/procedures/_high-availability-setup.mdx';
 import IntegrationPrereqs from "/snippets/prerequisites/_integration-prereqs.mdx";
@@ -53,11 +54,9 @@ and regular {PG} tables in the same way.
 This section shows you how to create regular tables and {HYPERTABLE}s, and import
 relational and time-series data from external files.
 
-<Procedure>
-
 1.  **Import some time-series data into {HYPERTABLE}s**
 
-    1. Unzip <Tag type="download">[crypto_sample.zip](https://assets.timescale.com/docs/downloads/candlestick/crypto_sample.zip)</Tag> to a `<local folder>`.
+    1. Unzip [crypto_sample.zip](https://assets.timescale.com/docs/downloads/candlestick/crypto_sample.zip) to a `<local folder>`.
 
        This test dataset contains: 
          - Second-by-second data for the most-traded crypto-assets. This time-series data is best suited for
@@ -90,7 +89,7 @@ relational and time-series data from external files.
               If you want to  have a quick look at your data, press `Run` .
           1. Repeat the process with `<local folder>/tutorial_sample_assets.csv` and rename to `crypto_assets`.
        
-              There is no time-series data in this table, so you don't see the  `hypertable partition` option. 
+             There is no time-series data in this table, so you don't see the  `hypertable partition` option.
 
        </Tab>
         
@@ -161,8 +160,6 @@ relational and time-series data from external files.
 
     <TryItOutCodeBlock queryId="getting-started-crypto-srt-orderby" />
 
-</Procedure>
-
 ## Enhance query performance for analytics
 
 {HYPERCORE}_CAP is the {TIMESCALE_DB} hybrid row-columnar storage engine, designed specifically for real-time 
@@ -182,7 +179,6 @@ and keeps your queries operating at lightning speed.
 data that is no longer needed for highest performance queries, but is still accessed regularly in the {COLUMNSTORE}.
 For example, yesterday's market data.
 
-<Procedure>
 
 1. **Add a policy to convert {CHUNK}s to the {COLUMNSTORE} at a specific time interval**
 
@@ -201,8 +197,6 @@ For example, yesterday's market data.
    saved, click `Explorer` > `public` > `crypto_ticks`. 
 
    ![Columnstore data savings](https://assets.timescale.com/docs/images/tiger-cloud-console/tiger-cloud-console-columstore-data-savings.png )
-
-</Procedure>
 
 ## Write fast and efficient analytical queries
 
@@ -329,9 +323,7 @@ tier and generates the response.
 
 Data tiering is available in the [{SCALE} and {ENTERPRISE}][pricing-plans] {PRICING_PLAN}s for {CLOUD_LONG}.
 
-To set up data tiering: 
-
-<Procedure>
+To set up data tiering:
 
 1. **Enable data tiering**
 
@@ -367,9 +359,7 @@ To set up data tiering:
       ```sql  
       set timescaledb.enable_tiered_reads = false;
       ```
-    For more information, see [Querying tiered data][querying-tiered-data].    
-
-</Procedure>
+    For more information, see [Querying tiered data][querying-tiered-data].
 
 ## Reduce the risk of downtime and data loss
 
