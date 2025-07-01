@@ -11,18 +11,19 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Get started",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "get-started/try-key-features-timescale-products",
+              "get-started/start-coding-with-timescale",
+              "get-started/services",
+              "get-started/run-queries-from-console"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "About",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -30,6 +31,114 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Cloud",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/try-key-features-timescale-products"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Open source",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/try-key-features-timescale-products"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Data model",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/try-key-features-timescale-products"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Administration",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/try-key-features-timescale-products"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "AI and vector",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/try-key-features-timescale-products"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Migrate",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/try-key-features-timescale-products"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"
             ]
           }
         ]
@@ -53,43 +162,62 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Knowledge base",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "get-started/try-key-features-timescale-products"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code"
+            ]
+          }
+        ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "dropdowns": [
+      {
+        "dropdown": "Get started",
+        "icon": "book-open",
+        "pages": [
+          "quickstart",
+          "development",
+          "navigation"
+        ]
+      },
+      {
+        "dropdown": "API Ref",
+        "icon": "square-terminal",
+        "pages": [
+          "api-reference/get",
+          "api-reference/post",
+          "api-reference/delete"
+        ]
+      }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://assets.timescale.com/timescale-web/shared/logo/tigerdata-logo-black.svg",
+    "dark": "https://assets.timescale.com/timescale-web/shared/logo/tigerdata-logo-white.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "TigerData",
+        "href": "https://www.tiger.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Try for free",
+      "href": "https://console.cloud.timescale.com/signup"
     }
   },
   "footer": {
