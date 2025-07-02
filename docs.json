@@ -26,6 +26,7 @@
             "group": "Understand",
             "pages": [
               "get-started/whitepaper",
+              "get-started/implementation-workflow",
               "get-started/pricing-and-account-management",
               "get-started/changelog"
 
