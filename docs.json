@@ -31,6 +31,16 @@
               "get-started/changelog"
 
             ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "get-started/real-time-analytics-energy-consumption",
+              "get-started/real-time-analytics-transport",
+              "get-started/ingest-real-time-websocket-data",
+              "get-started/simulate-iot-sensor-data"
+
+            ]
           }
         ]
       },
