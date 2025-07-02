@@ -1,71 +1,160 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+description: "Welcome to the TigerData documentation! We make Postgres better for your real-time analytics and AI workloads. "
+mode: "wide"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+<Columns cols={2}>
+    <Card title="Get started with Tiger Cloud" icon="rocket" href="/quickstart">
+        Tiger Cloud is the fastest Postgres cloud, powered by Tiger Postgres. It enhances Postgres to handle time series, events, real-time analytics, and vector search—all in a single database alongside transactional workloads.
+    </Card>
+    <Card title="Get started with TimescaleDB" icon="play" href="/quickstart-timescaledb">
+        TimescaleDB is an open-source Postgres extension designed for running real-time analytics on time-series data. It is engineered up from Postgres and maintains full SQL support.
+    </Card>
+</Columns>
 
-## Setting up
 
-The first step to world-class documentation is setting up your editing environments.
+## Features
 
-<CardGroup cols={2}>
+<CardGroup cols={3}>
   <Card
-    title="Edit Your Docs"
+    title="Hypertables"
     icon="pen-to-square"
     href="https://mintlify.com/docs/quickstart"
   >
-    Get your docs set up locally for easy development
+  Postgres tables in TimescaleDB that automatically partition your time-series data by time.
   </Card>
   <Card
-    title="Preview Changes"
-    icon="image"
+    title="Hypercore"
+    icon="table-cells-row-unlock"
     href="https://mintlify.com/docs/development"
   >
-    Preview your changes before you push to make sure they're perfect
+  The hybrid row-columnar storage engine in TimescaleDB used by hypertables.
+  </Card>
+  <Card
+      title="Continuous aggregates"
+      icon="squirrel"
+      href="https://mintlify.com/docs/development"
+  >
+  Incrementally refresh aggregation queies in the background.
   </Card>
 </CardGroup>
+<Card  icon="globe" href="/components/columns">
+    All Tiger Cloud services include the tooling you expect for production and developer environments: [live migration](link), [automatic backups](link) and [PITR](), [high availability](), [read replicas](), [data forking](), [connection pooling](), [tiered storage](), [usage-based storage](), [secure in-Console SQL editing](),  [service metrics and insights](), [streamlined maintenance](), and much more. Tiger Cloud continuously monitors your services and prevents common PostgreSQL out-of-memory crashes.
+</Card>
 
-## Make it yours
+## Integrations
 
-Update your docs to your brand and add valuable content for the best user conversion.
-
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
+<CardGroup cols={3}>
+    <Card
+        title="Amazon Web Services (AWS)"
+        icon="image"
+        href="https://mintlify.com/docs/quickstart"
+    >
+    </Card>
+    <Card
+        title="DataDog"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
+    <Card
+        title="Terraform"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
 </CardGroup>
+
+<CardGroup cols={3}>
+    <Card
+        title="Prometheus"
+        icon="image"
+        href="https://mintlify.com/docs/quickstart"
+    >
+    </Card>
+    <Card
+        title="Grafana"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
+    <Card
+        title="Tableau"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
+</CardGroup>
+<Card  icon="globe" href="/components/columns">
+    See the BAZILLIONS of products you can easily [integrate with Tiger Cloud]().
+</Card>
+
+## Migrate and ingest data
+
+<CardGroup cols={3}>
+    <Card
+        title="Live migration"
+        icon="image"
+        href="https://mintlify.com/docs/quickstart"
+    >
+    </Card>
+    <Card
+        title="Livesync from Postgres"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
+    <Card
+        title="Livesync from S3"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
+</CardGroup>
+<CardGroup cols={3}>
+    <Card
+    title="Import from CSV"
+    icon="image"
+    href="https://mintlify.com/docs/quickstart"
+>
+</Card>
+    <Card
+    title="Import from Mysql"
+    icon="image"
+    href="https://mintlify.com/docs/development"
+>
+</Card>
+    <Card
+    title="Import from Parquet"
+    icon="image"
+    href="https://mintlify.com/docs/development"
+>
+</Card>
+</CardGroup>
+
+## Tutorials
+
+<CardGroup cols={3}>
+    <Card
+        title="Analytics on transport and geospatial data"
+        icon="image"
+        href="https://mintlify.com/docs/quickstart"
+    >
+    </Card>
+    <Card
+        title="Analytics on energy consumption"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
+    <Card
+        title="Query the Bitcoin blockchain"
+        icon="image"
+        href="https://mintlify.com/docs/development"
+    >
+    </Card>
+</CardGroup>
+
+<Card  icon="globe" href="/components/columns">
+    See the other tutorials in our [tutorials section](/tutorials/), including bla and bla and bla.
+</Card>
