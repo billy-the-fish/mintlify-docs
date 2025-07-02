@@ -14,12 +14,10 @@
         "tab": "Get started",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Get started",
             "pages": [
-              "get-started/try-key-features-timescale-products",
-              "get-started/start-coding-with-timescale",
-              "get-started/services",
-              "get-started/run-queries-from-console"
+              "get-started/get-started-with-tiger-cloud",
+              "get-started/start-coding-with-timescale"
             ]
           },
           {
@@ -50,7 +48,8 @@
           {
             "group": "Get Started",
             "pages": [
-              "get-started/try-key-features-timescale-products"
+              "cloud/services",
+              "cloud/run-queries-from-console"
             ]
           },
           {
@@ -68,7 +67,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "get-started/try-key-features-timescale-products"
+              "open-source/get-started-with-timescaleDB"
             ]
           },
           {
@@ -86,14 +85,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "get-started/try-key-features-timescale-products"
-            ]
-          },
-          {
-            "group": "Core concepts",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code"
+              "open-source/get-started-with-timescaleDB"
             ]
           }
         ]
@@ -102,9 +94,9 @@
         "tab": "Administration",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Get started",
             "pages": [
-              "get-started/try-key-features-timescale-products"
+              "administration/index"
             ]
           },
           {
@@ -122,7 +114,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "get-started/try-key-features-timescale-products"
+              "get-started/get-started-with-tiger-cloud"
             ]
           },
           {
@@ -140,7 +132,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "get-started/try-key-features-timescale-products"
+              "get-started/get-started-with-tiger-cloud"
             ]
           },
           {
@@ -156,13 +148,19 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "TimescaleDB",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/timescaledb/index",
+              {
+                "group": "Hypertables",
+                "pages": [
+                  "api-reference/timescaledb/hypertables/create_table"
+                ]
+              }
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "pgai",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -178,7 +176,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "get-started/try-key-features-timescale-products"
+              "get-started/get-started-with-tiger-cloud"
             ]
           },
           {
