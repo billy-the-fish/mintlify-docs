@@ -14,8 +14,9 @@
         "tab": "Get started",
         "groups": [
           {
-            "group": "Get started",
+            "group": "Overview",
             "pages": [
+              "get-started/get-started",
               "get-started/get-started-with-tiger-cloud",
               "get-started/start-coding-with-timescale"
             ]
@@ -23,21 +24,21 @@
           {
             "group": "Understand",
             "pages": [
-              "get-started/whitepaper",
-              "get-started/implementation-workflow",
-              "get-started/pricing-and-account-management",
-              "get-started/changelog"
+              "get-started/understand/whitepaper",
+              "get-started/understand/implementation-workflow",
+              "get-started/understand/run-your-workload-in-cloud",
+              "get-started/understand/pricing-and-account-management",
+              "get-started/understand/changelog"
 
             ]
           },
           {
             "group": "Tutorials",
             "pages": [
-              "get-started/real-time-analytics-energy-consumption",
-              "get-started/real-time-analytics-transport",
-              "get-started/ingest-real-time-websocket-data",
-              "get-started/simulate-iot-sensor-data"
-
+              "get-started/tutorials/real-time-analytics-energy-consumption",
+              "get-started/tutorials/real-time-analytics-transport",
+              "get-started/tutorials/ingest-real-time-websocket-data",
+              "get-started/tutorials/simulate-iot-sensor-data"
             ]
           }
         ]
@@ -46,14 +47,15 @@
         "tab": "Cloud",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Overview",
             "pages": [
+              "cloud/cloud",
               "cloud/services",
               "cloud/run-queries-from-console"
             ]
           },
           {
-            "group": "Core concepts",
+            "group": "Security",
             "pages": [
               "essentials/markdown",
               "essentials/code"
@@ -63,109 +65,166 @@
       },
       {
         "tab": "Open source",
-        "groups": [
+        "dropdowns": [
           {
-            "group": "Get Started",
-            "pages": [
-              "open-source/get-started-with-timescaleDB"
-            ]
-          },
-          {
-            "group": "Core concepts",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Data model",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "open-source/get-started-with-timescaleDB"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Administration",
-        "groups": [
-          {
-            "group": "Get started",
-            "pages": [
-              "administration/index"
-            ]
-          },
-          {
-            "group": "Core concepts",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "AI and vector",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "get-started/get-started-with-tiger-cloud"
-            ]
-          },
-          {
-            "group": "Core concepts",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Migrate",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "get-started/get-started-with-tiger-cloud"
-            ]
-          },
-          {
-            "group": "Core concepts",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "TimescaleDB",
-            "pages": [
-              "api-reference/timescaledb/index",
+            "dropdown": "TimescaleDB",
+            "groups": [
               {
-                "group": "Hypertables",
+                "group": "Overview",
                 "pages": [
-                  "api-reference/timescaledb/hypertables/create_table"
+                  "open-source/open-source",
+                  "open-source/timescaleDB-get-started",
+                  "open-source/timescaledb-read-write-data"
+                ]
+              },
+              {
+                "group": "Install and update",
+                "pages": [
+                  "open-source/timescaledb/install-self-hosted",
+                  "open-source/timescaledb/update-self-hosted",
+                  "open-source/timescaledb/uninstall-self-hosted"
+                ]
+              },
+              {
+                "group": "Hypercore",
+                "pages": [
+                  "api-reference/timescaledb/hypertables/show_chunks"
                 ]
               }
             ]
           },
           {
-            "group": "pgai",
+            "dropdown": "pgai",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "open-source/pgai/pgvector-get-started",
+              "open-source/pgai/vectorizer-automate-ai-embeddings"
+            ]
+          },
+          {
+            "dropdown": "pgvectorscale",
+            "pages": [
+              "open-source/pgai/pgvector-get-started",
+              "open-source/pgai/vectorizer-automate-ai-embeddings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Workloads",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "workloads/workloads"
+            ]
+          },
+          {
+            "group": "Real-time analytics",
+            "pages": [
+              "workloads/real-time-analytics/energy-consumption",
+              "workloads/real-time-analytics/transport"
+            ]
+          },
+          {
+            "group": "Time-series",
+            "pages": [
+              "workloads/time-series/query-bitcoin-blockchain",
+              "workloads/time-series/health-biometical-analysis",
+              "workloads/time-series/anomaly-detection-in-streaming-data"
+            ]
+          },
+          {
+            "group": "AI",
+            "pages": [
+              "workloads/ai/financial-forcasting",
+              "workloads/ai/powered-observability",
+              "workloads/ai/real-time-predictive-maintenence"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Migrate and sync",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "migration/migration"
+            ]
+          },
+          {
+            "group": "Data lake",
+            "pages": [
+              "migration/datalake/tigerlake"
+            ]
+          },
+          {
+            "group": "Live migration",
+            "pages": [
+              "migration/live/migration-live-migration"
+            ]
+          },
+          {
+            "group": "Live sync",
+            "pages": [
+              "migration/sync/sync-from-postgres",
+              "migration/sync/sync-from-s3"
+            ]
+          },
+          {
+            "group": "Import",
+            "pages": [
+              "migration/import/import-csv",
+              "migration/import/import-mysql",
+              "migration/import/import-parquet"
+            ]
+          },
+          {
+            "group": "Ingest",
+            "pages": [
+              "migration/ingest/ingest-telegraf",
+              "migration/ingest/ingest-kafka"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API reference",
+        "dropdowns": [
+          {
+            "dropdown": "TimescaleDB ",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "api-reference/api-reference"
+                ]
+              },
+              {
+                "group": "Hypertables",
+                "pages": [
+                  "api-reference/timescaledb/hypertables/create_table",
+                  "api-reference/timescaledb/hypertables/show_chunks"
+                ]
+              },
+              {
+                "group": "Hypercore",
+                "pages": [
+                  "api-reference/timescaledb/hypertables/show_chunks"
+                ]
+              }
+            ]
+          },
+          {
+            "dropdown": "pgai ",
+            "pages": [
+              "api-reference/pgai/vectorizer-api-reference"
+            ]
+          },
+          {
+            "dropdown": "pgvectorscale ",
+            "pages": [
+              "api-reference/pgvectorscale/pgvectorscale-api-reference"
             ]
           }
         ]
@@ -174,16 +233,33 @@
         "tab": "Knowledge base",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Overview",
             "pages": [
-              "get-started/get-started-with-tiger-cloud"
+              "knowledge-base/knowledge-base"
             ]
           },
           {
-            "group": "Core concepts",
+            "group": "Cloud feature requests",
             "pages": [
-              "essentials/markdown",
-              "essentials/code"
+              "knowledge-base/fr-about"
+            ]
+          },
+          {
+            "group": "TimescaleDB and Postgres",
+            "pages": [
+              "knowledge-base/tsdb-about"
+            ]
+          },
+          {
+            "group": "Managed services for TimescaleDB",
+            "pages": [
+              "knowledge-base/tsdb-about"
+            ]
+          },
+          {
+            "group": "Special interest groups",
+            "pages": [
+              "knowledge-base/sig-about"
             ]
           }
         ]
