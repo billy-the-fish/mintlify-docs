@@ -16,9 +16,7 @@
           {
             "group": "Overview",
             "pages": [
-              "get-started/get-started",
-              "get-started/get-started-with-tiger-cloud",
-              "get-started/start-coding-with-timescale"
+              "get-started/get-started"
             ]
           },
           {
@@ -49,8 +47,16 @@
           {
             "group": "Overview",
             "pages": [
-              "cloud/cloud",
+              "cloud/cloud"
+            ]
+          },
+          {
+            "group": "Get started",
+            "pages": [
+              "cloud/get-started-with-tiger-cloud",
+              "cloud/start-coding-with-tigerdata",
               "cloud/services",
+              "cloud/optimize-your-services",
               "cloud/run-queries-from-console"
             ]
           },
@@ -72,9 +78,15 @@
               {
                 "group": "Overview",
                 "pages": [
-                  "open-source/open-source",
-                  "open-source/timescaleDB-get-started",
-                  "open-source/timescaledb-read-write-data"
+                  "open-source/open-source"
+                ]
+              },
+              {
+                "group": "Get started",
+                "pages": [
+                  "open-source/timescaledb/get-started-with-timescaledb",
+                  "open-source/timescaledb/timescaledb-read-write-data",
+                  "open-source/timescaledb/design-your-data-architecture"
                 ]
               },
               {
@@ -143,7 +155,7 @@
         ]
       },
       {
-        "tab": "Migrate and sync",
+        "tab": "Migrate and import data",
         "groups": [
           {
             "group": "Overview",
@@ -160,7 +172,7 @@
           {
             "group": "Live migration",
             "pages": [
-              "migration/live/migration-live-migration"
+              "migration/live/live-migration"
             ]
           },
           {
@@ -183,6 +195,34 @@
             "pages": [
               "migration/ingest/ingest-telegraf",
               "migration/ingest/ingest-kafka"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "integrations/integrations"
+            ]
+          },
+          {
+            "group": "Authentication and security",
+            "pages": [
+              "https://authjs.dev/getting-started/adapters/pg?framework=next-js",
+              "https://auth0.com/blog/configuring-postgresql-as-auth0-custom-database/",
+              "https://help.okta.com/oag/en-us/content/topics/access-gateway/integrate-app-datastores.htm"
+            ]
+          },
+          {
+            "group": "Business intelligence and data visualization",
+            "pages": [
+              "https://cube.dev/integrations/Timescale-API",
+              "https://cloud.google.com/looker/docs/db-config-postgresql",
+              "https://www.metabase.com/data_sources/postgresql",
+              "https://docs-dev.timescale.com/docs-danil-add-memory-caching-explanation/integrations/danil-add-memory-caching-explanation/power-bi/"
             ]
           }
         ]

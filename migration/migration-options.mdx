@@ -1,0 +1,46 @@
+---
+title: Migration options
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+products: [cloud, mst, self_hosted]
+keywords: [IoT, simulate]
+mode: "wide"
+---
+
+
+## Database Migration
+
+Tiger Cloud provides multiple migration strategies based on the volume of data and the downtime you can accommodate. Each approach is designed to streamline the transition process while ensuring data integrity and minimal service disruption. Below is an overview of the available migration methods.
+
+Organizations migrating over 400GB should request Timescale support to pre-provision resources for a smoother process.
+
+
+### Migrate with Downtime (pg_dump/pg_restore)
+
+For datasets under 100GB, pg_dump and pg_restore offer a straightforward migration method for transferring data from a self-hosted PostgreSQL or TimescaleDB instance to Tiger Cloud. This method is ideal for environments where some downtime is acceptable. It supports compressed hypertables without requiring decompression before migration. However, for larger datasets exceeding 100GB, live migration is recommended for efficiency. For full technical details and step-by-step guidance, refer to the [pg_dump and restore migration guide](https://docs.timescale.com/migrate/latest/pg-dump-and-restore/).
+
+
+### Live Migration for Minimal Downtime
+
+Live migration provides an end-to-end solution for moving databases with minimal downtime, making it suitable for datasets between 100GB and 10TB+. This method leverages PostgreSQL logical replication and pgcopydb to copy data while keeping the source and target databases synchronized. It is best suited for scenarios where modifying application logic for dual writes is impractical. Live migration is not ideal for workloads exceeding 20,000 rows per second or databases with frequent UPDATE/DELETE operations on compressed tables. Organizations migrating over 400GB should engage Timescale support for assistance. For a detailed guide on live migration, visit the [live migration documentation](https://docs.timescale.com/migrate/latest/live-migration/).
+
+
+### Dual-Write and Backfill for High-Ingestion Workloads
+
+This strategy is designed for large-scale time-series workloads (100GB-10TB+) where minimal downtime is required. It involves three key steps: schema and relational data cloning, dual-write implementation, and backfilling historical time-series data. This method is particularly effective for append-only workloads where historical data does not require frequent updates. It supports migrations from PostgreSQL, Tiger Cloud, or any database that can export data in CSV format. Since it is more complex than pg_dump/restore, it requires careful planning and validation. For detailed implementation guidance, refer to the [dual-write and backfill documentation](https://docs.timescale.com/migrate/latest/dual-write-and-backfill/).
+
+
+### Livesync from PostgreSQL to Tiger Cloud
+
+Livesync enables continuous real-time synchronization between a PostgreSQL source database and a Tiger Cloud service, effectively making Tiger Cloud a logical replica. It is optimized for scenarios where real-time analytics on a Tiger Cloud replica is required rather than a one-time migration. Livesync supports copying large datasets at speeds of up to 150GB per hour, but it does not migrate schema changes automatically. This feature is currently in alpha and is not recommended for production use. For more details, visit the [Livesync documentation](https://docs.timescale.com/migrate/latest/livesync/).
+
+Each of these migration strategies provides a tailored approach based on workload requirements, ensuring a seamless transition to Tiger Cloud.
+
+Migration support is available for PostgreSQL, Tiger Cloud, AWS RDS, and Managed Service for Timescale users. If you encounter any issues during migration:
+
+
+
+1. You can refer to the[ troubleshooting guide](https://docs.timescale.com/migrate/latest/)
+2. Open a support request via the [Timescale console](https://console.cloud.timescale.com/dashboard/support/email) or contact support via email at **[support@timescale.com](mailto:support@timescale.com)**.
+3. Additionally, the **#migration **channel in the Timescale [community Slack](https://slack.timescale.com/) provides direct access to developers who can assist with migration-related questions.
+
+For users migrating from non-PostgreSQL databases, the recommended approach is to export data as a **.csv** file and use **[timescaledb-parallel-copy](https://docs.timescale.com/use-timescale/latest/ingest-data/import-csv/)** for efficient ingestion into Tiger Cloud. Other ingestion methods are available depending on the source database; more details can be found in the [Ingest data from other sources guide](https://docs.timescale.com/use-timescale/latest/ingest-data/).
