@@ -1,6 +1,6 @@
 ---
 title: Vectorizer API reference
-description: Yeah yeah yeah
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
 This page provides an API reference for Vectorizer functions. For an overview
@@ -193,8 +193,8 @@ in other management functions.
 | Name             | Type                                                   | Default                           | Required | Description                                                                                        |
 |------------------|--------------------------------------------------------|-----------------------------------|----------|----------------------------------------------------------------------------------------------------|
 | source           | regclass                                               | -                                 | ✔        | The source table that embeddings are generated for.                                                |
-| name             | text                                                   | Auto-generated                    | ✖        | A unique name for the vectorizer. If not provided, it's auto-generated based on the destination type:<br>- For table destination: `[target_schema]_[target_table]`</br><br>- For column destination: `[source_schema]_[source_table]_[embedding_column]`</br><br>Must follow snake_case pattern `^[a-z][a-z_0-9]*$` </br>                           |
-| destination      | [Destination configuration](#destination-configuration)| `ai.destination_table()`          | ✖        | Configure how the embeddings will be stored. Two options available: <ul><li>`ai.destination_table()` (default): Creates a separate table to store embeddings</li><li> `ai.destination_column()`: Adds an embedding column directly to the source table</li></ul>                             |
+| name             | text                                                   | Auto-generated                    | ✖        | A unique name for the vectorizer. If not provided, it's auto-generated based on the destination type:- For table destination: `[target_schema]_[target_table]`- For column destination: `[source_schema]_[source_table]_[embedding_column]` Must follow snake_case pattern `^[a-z][a-z_0-9]*$`
+| destination      | [Destination configuration](#destination-configuration)| `ai.destination_table()`          | ✖        | Configure how the embeddings will be stored. Two options available: `ai.destination_table()` (default): Creates a separate table to store embeddings - `ai.destination_column()`: Adds an embedding column directly to the source table  |
 | embedding        | [Embedding configuration](#embedding-configuration)    | -                                 | ✔        | Set how to embed the data.                                                                         |
 | loading          | [Loading configuration](#loading-configuration)      | -                                 | ✔        | Set the way to load the data from the source table, using functions like `ai.loading_column()`.      |
 | parsing          | [Parsing configuration](#parsing-configuration)      | ai.parsing_auto()                                 | ✖        | Set the way to parse the data, using functions like `ai.parsing_auto()`.      |

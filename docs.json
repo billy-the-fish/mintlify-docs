@@ -103,8 +103,7 @@
           {
             "dropdown": "pgvectorscale",
             "pages": [
-              "open-source/pgai/pgvector-get-started",
-              "open-source/pgai/vectorizer-automate-ai-embeddings"
+              "open-source/pgvectorscale/pgvectorscale-get-started"
             ]
           }
         ]
