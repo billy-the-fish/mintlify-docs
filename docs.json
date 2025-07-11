@@ -11,37 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Get started",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "get-started/get-started"
-            ]
-          },
-          {
-            "group": "Understand",
-            "pages": [
-              "get-started/understand/whitepaper",
-              "get-started/understand/implementation-workflow",
-              "get-started/understand/run-your-workload-in-cloud",
-              "get-started/understand/pricing-and-account-management",
-              "get-started/understand/changelog"
-
-            ]
-          },
-          {
-            "group": "Tutorials",
-            "pages": [
-              "get-started/tutorials/real-time-analytics-energy-consumption",
-              "get-started/tutorials/real-time-analytics-transport",
-              "get-started/tutorials/ingest-real-time-websocket-data",
-              "get-started/tutorials/simulate-iot-sensor-data"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Cloud",
         "groups": [
           {
@@ -53,11 +22,40 @@
           {
             "group": "Get started",
             "pages": [
-              "cloud/get-started-with-tiger-cloud",
-              "cloud/start-coding-with-tigerdata",
-              "cloud/services",
-              "cloud/optimize-your-services",
-              "cloud/run-queries-from-console"
+              "cloud/get-started/get-started-with-tiger-cloud",
+              "cloud/get-started/start-coding-with-tigerdata",
+              "cloud/get-started/services",
+              "cloud/get-started/run-queries-from-console",
+              "cloud/get-started/run-your-workload-in-cloud"
+            ]
+          },
+          {
+            "group": "Understand",
+            "pages": [
+              "cloud/understand/whitepaper",
+              "cloud/understand/implementation-workflow",
+              "cloud/understand/pricing-and-account-management",
+              "cloud/understand/changelog"
+
+            ]
+          },
+          {
+            "group": "Manage your data",
+            "pages": [
+              "cloud/understand/whitepaper",
+              "open-source/timescaledb/hypertables/understand-hypertables",
+              "open-source/timescaledb/hypercore/understand-hypercore",
+              "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
+
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "cloud/tutorials/real-time-analytics-energy-consumption",
+              "cloud/tutorials/real-time-analytics-transport",
+              "cloud/tutorials/ingest-real-time-websocket-data",
+              "cloud/tutorials/simulate-iot-sensor-data"
             ]
           },
           {
@@ -84,9 +82,14 @@
               {
                 "group": "Get started",
                 "pages": [
-                  "open-source/timescaledb/get-started-with-timescaledb",
-                  "open-source/timescaledb/timescaledb-read-write-data",
-                  "open-source/timescaledb/design-your-data-architecture"
+                  "open-source/timescaledb/get-started/get-started-with-timescaledb",
+                  "open-source/timescaledb/get-started/timescaledb-read-write-data"
+                ]
+              },
+              {
+                "group": "Understand",
+                "pages": [
+                  "open-source/timescaledb/understand/design-your-data-architecture"
                 ]
               },
               {
@@ -98,9 +101,22 @@
                 ]
               },
               {
+                "group": "Hypertables",
+                "pages": [
+                  "open-source/timescaledb/hypertables/understand-hypertables",
+                  "open-source/timescaledb/hypertables/hypertable-crud"
+                ]
+              },
+              {
                 "group": "Hypercore",
                 "pages": [
-                  "api-reference/timescaledb/hypertables/show_chunks"
+                  "open-source/timescaledb/hypercore/understand-hypercore"
+                ]
+              },
+              {
+                "group": "Continuous aggregates",
+                "pages": [
+                  "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
                 ]
               }
             ]
@@ -241,7 +257,7 @@
           {
             "group": "Language-specific integrations",
             "pages": [
-              "get-started/start-coding-with-tigerdata"
+              "cloud/get-started/start-coding-with-tigerdata"
             ]
           },
           {
