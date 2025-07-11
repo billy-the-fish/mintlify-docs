@@ -5,7 +5,7 @@ products: [cloud, self_hosted]
 keywords: [connect, psql]
 ---
 
-import { COMPANY, PG, SERVICE_LONG, SERVICE_SHORT, TARGET } from '/snippets/vars.mdx';
+import { COMPANY, PG, SERVICE_LONG, SERVICE_SHORT } from '/snippets/vars.mdx';
 import IntegrationPrereqs from "/snippets/prerequisites/_integration-prereqs.mdx";
 
 # Connect with psql
@@ -236,7 +236,7 @@ the `/tmp/` directory. You can open the file using any spreadsheet program.
 To run multi-line queries in `psql`, use the `EOF` delimiter. For example:
 
 ```sql
-psql -d {TARGET} -f -v hypertable=<hypertable> - <<'EOF'
+psql -d $TARGET -f -v hypertable=<hypertable> - <<'EOF'
 SELECT public.alter_job(j.id, scheduled=>true)
 FROM _timescaledb_config.bgw_job j
 JOIN _timescaledb_catalog.hypertable h ON h.id = j.hypertable_id

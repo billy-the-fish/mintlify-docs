@@ -14,7 +14,7 @@
         "tab": "Get started",
         "groups": [
           {
-            "group": "Overview",
+            "group": " ",
             "pages": [
               "get-started/get-started"
             ]
@@ -45,7 +45,7 @@
         "tab": "Cloud",
         "groups": [
           {
-            "group": "Overview",
+            "group": " ",
             "pages": [
               "cloud/cloud"
             ]
@@ -76,7 +76,7 @@
             "dropdown": "TimescaleDB",
             "groups": [
               {
-                "group": "Overview",
+                "group": " ",
                 "pages": [
                   "open-source/open-source"
                 ]
@@ -124,7 +124,7 @@
         "tab": "Workloads",
         "groups": [
           {
-            "group": "Overview",
+            "group": " ",
             "pages": [
               "workloads/workloads"
             ]
@@ -158,7 +158,7 @@
         "tab": "Migrate and import data",
         "groups": [
           {
-            "group": "Overview",
+            "group": " ",
             "pages": [
               "migration/migration"
             ]
@@ -203,7 +203,7 @@
         "tab": "Integrations",
         "groups": [
           {
-            "group": "Overview",
+            "group": " ",
             "pages": [
               "integrations/integrations"
             ]
@@ -234,7 +234,7 @@
             "dropdown": "TimescaleDB ",
             "groups": [
               {
-                "group": "Overview",
+                "group": " ",
                 "pages": [
                   "api-reference/api-reference"
                 ]
@@ -272,7 +272,7 @@
         "tab": "Knowledge base",
         "groups": [
           {
-            "group": "Overview",
+            "group": " ",
             "pages": [
               "knowledge-base/knowledge-base"
             ]

@@ -5,7 +5,7 @@ products: [cloud, self_hosted]
 keywords: [connect, integrate, apache, airflow]
 ---
 
-import { AIRFLOW_HOME, CLOUD_LONG, CONSOLE, PG, SERVICE_LONG } from '/snippets/vars.mdx';
+import { CLOUD_LONG, CONSOLE, PG, SERVICE_LONG } from '/snippets/vars.mdx';
 import IntegrationPrereqs from "/snippets/prerequisites/_integration-prereqs.mdx";
 
 # Integrate Apache Airflow with {CLOUD_LONG}
@@ -14,7 +14,7 @@ Apache Airflow® is a platform created by the community to programmatically auth
 
 A [DAG (Directed Acyclic Graph)][Airflow-DAG] is the core concept of Airflow, collecting [Tasks][Airflow-Task] together,
 organized with dependencies and relationships to say how they should run. You declare a DAG in a Python file
-in the `{AIRFLOW_HOME}/dags` folder of your Airflow instance.
+in the `$AIRFLOW_HOME/dags` folder of your Airflow instance.
 
 This page shows you how to use a Python connector in a DAG to integrate Apache Airflow with a {SERVICE_LONG}.
 
@@ -83,7 +83,7 @@ To exchange data between Airflow and your {SERVICE_LONG}:
 1. **Create and execute a DAG** 
 
    To insert data in your {SERVICE_LONG} from Airflow:
-   1. In `{AIRFLOW_HOME}/dags/timescale_dag.py`, add the following code:
+   1. In `$AIRFLOW_HOME/dags/timescale_dag.py`, add the following code:
 
        ```python
        from airflow import DAG

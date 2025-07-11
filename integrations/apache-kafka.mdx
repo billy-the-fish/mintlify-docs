@@ -7,8 +7,8 @@ keywords: [Apache Kafka, integrations]
 
 import { CLOUD_LONG, PG, SERVICE_LONG } from '/snippets/vars.mdx';
 import IntegrationPrereqs from "/snippets/prerequisites/_integration-prereqs.mdx";
-import IntegrationApacheKafka from "/snippets/prerequisites/_integration-apache-kafka-install.mdx";
-import OldCreateHypertable from "/snippets/prerequisites/_old-api-create-hypertable.mdx";
+import IntegrationApacheKafka from "/snippets/integrations/_integration-apache-kafka-install.mdx";
+import OldCreateHypertable from "/snippets/changes/_old-api-create-hypertable.mdx";
 
 # Integrate Apache Kafka with {CLOUD_LONG}
 
@@ -46,7 +46,7 @@ To set up Kafka Connect server, plugins, drivers, and connectors:
 
 1. **Install the {PG} connector**
 
-   In another Terminal window, navigate to <KAFKA_HOME>, then download and configure the {PG} sink and driver.
+   In another Terminal window, navigate to `<KAFKA_HOME>`, then download and configure the {PG} sink and driver.
    ```bash
    mkdir -p "plugins/camel-postgresql-sink-kafka-connector"
    curl https://repo.maven.apache.org/maven2/org/apache/camel/kafkaconnector/camel-postgresql-sink-kafka-connector/3.21.0/camel-postgresql-sink-kafka-connector-3.21.0-package.tar.gz \
