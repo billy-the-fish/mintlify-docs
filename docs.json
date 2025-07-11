@@ -209,20 +209,69 @@
             ]
           },
           {
-            "group": "Authentication and security",
+            "group": "Business intelligence and data visualization",
             "pages": [
-              "https://authjs.dev/getting-started/adapters/pg?framework=next-js",
-              "https://auth0.com/blog/configuring-postgresql-as-auth0-custom-database/",
-              "https://help.okta.com/oag/en-us/content/topics/access-gateway/integrate-app-datastores.htm"
+              "integrations/power-bi"
+              ]
+          },
+          {
+            "group": "Configuration and deployment",
+            "pages": [
+              "integrations/terraform",
+              "integrations/kubernetes"
             ]
           },
           {
-            "group": "Business intelligence and data visualization",
+            "group": "Data engineering and extract, transform, load",
             "pages": [
-              "https://cube.dev/integrations/Timescale-API",
-              "https://cloud.google.com/looker/docs/db-config-postgresql",
-              "https://www.metabase.com/data_sources/postgresql",
-              "https://docs-dev.timescale.com/docs-danil-add-memory-caching-explanation/integrations/danil-add-memory-caching-explanation/power-bi/"
+              "integrations/amazon-sagemaker",
+              "integrations/apache-airflow",
+              "integrations/apache-kafka",
+              "integrations/aws-lambda",
+              "integrations/debezium",
+              "integrations/decodable"
+            ]
+          },
+          {
+            "group": "Data ingestion and streaming",
+            "pages": [
+              "integrations/fivetran"
+            ]
+          },
+          {
+            "group": "Language-specific integrations",
+            "pages": [
+              "get-started/start-coding-with-tigerdata"
+            ]
+          },
+          {
+            "group": "Observability and alerting",
+            "pages": [
+              "integrations/amazon-cloudwatch",
+              "integrations/datadog",
+              "integrations/grafana",
+              "integrations/prometheus",
+              "integrations/tableau"
+            ]
+          },
+          {
+            "group": "Query and administration",
+            "pages": [
+              "integrations/azure-data-studio",
+              "integrations/dbeaver",
+              "integrations/pgadmin",
+              "integrations/postgres",
+              "integrations/psql",
+              "integrations/qstudio"
+            ]
+          },
+          {
+            "group": "Secure connectivity to Tiger Cloud",
+            "pages": [
+              "integrations/aws",
+              "integrations/corporate-data-center",
+              "integrations/google-cloud",
+              "integrations/microsoft-azure"
             ]
           }
         ]
