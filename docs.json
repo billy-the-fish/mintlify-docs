@@ -24,7 +24,7 @@
             "pages": [
               "cloud/get-started/get-started-with-tiger-cloud",
               "cloud/get-started/start-coding-with-tigerdata",
-              "cloud/get-started/services",
+              "cloud/get-started/create-services",
               "cloud/get-started/run-queries-from-console",
               "cloud/get-started/run-your-workload-in-cloud"
             ]
@@ -32,7 +32,7 @@
           {
             "group": "Understand",
             "pages": [
-              "cloud/understand/whitepaper",
+              "cloud/understand/tiger-cloud-architecture",
               "cloud/understand/implementation-workflow",
               "cloud/understand/pricing-and-account-management",
               "cloud/understand/changelog"
@@ -42,7 +42,6 @@
           {
             "group": "Manage your data",
             "pages": [
-              "cloud/understand/whitepaper",
               "open-source/timescaledb/hypertables/understand-hypertables",
               "open-source/timescaledb/hypercore/understand-hypercore",
               "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
@@ -89,6 +88,7 @@
               {
                 "group": "Understand",
                 "pages": [
+                  "open-source/timescaledb/understand/timescaledb-architecture",
                   "open-source/timescaledb/understand/design-your-data-architecture"
                 ]
               },
@@ -199,10 +199,15 @@
             ]
           },
           {
-            "group": "Import and ingest",
+            "group": "Import data",
             "pages": [
               "migration/import-and-ingest/import-console",
-              "migration/import-and-ingest/import-terminal",
+              "migration/import-and-ingest/import-terminal"
+            ]
+          },
+          {
+            "group": "Ingest data",
+            "pages": [
               "migration/import-and-ingest/ingest-terminal"
             ]
           }
