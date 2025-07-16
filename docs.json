@@ -199,18 +199,11 @@
             ]
           },
           {
-            "group": "Import",
+            "group": "Import and ingest",
             "pages": [
-              "migration/import/import-csv",
-              "migration/import/import-mysql",
-              "migration/import/import-parquet"
-            ]
-          },
-          {
-            "group": "Ingest",
-            "pages": [
-              "migration/ingest/ingest-telegraf",
-              "migration/ingest/ingest-kafka"
+              "migration/import-and-ingest/import-console",
+              "migration/import-and-ingest/import-terminal",
+              "migration/import-and-ingest/ingest-terminal"
             ]
           }
         ]
