@@ -12,6 +12,51 @@
     "tabs": [
       {
         "tab": "Cloud",
+        "dropdowns": [
+          {
+            "dropdown": "Tiger Cloud",
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "cloud/cloud"
+                ]
+              },
+              {
+                "group": "Get started",
+                "pages": [
+                  "cloud/get-started/get-started-with-tiger-cloud",
+                  "cloud/get-started/start-coding-with-tigerdata",
+                  "cloud/get-started/create-services",
+                  "cloud/get-started/run-queries-from-console",
+                  "cloud/get-started/run-your-workload-in-cloud"
+                ]
+              },
+              {
+                "group": "Understand",
+                "pages": [
+                  "cloud/understand/tiger-cloud-architecture",
+                  "cloud/understand/implementation-workflow",
+                  "cloud/understand/pricing-and-account-management",
+                  "cloud/understand/changelog"
+                ]
+              }
+            ]
+          },
+          {
+            "dropdown": "MST",
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "open-source/timescaledb/hypertables/understand-hypertables",
+                  "open-source/timescaledb/hypercore/understand-hypercore",
+                  "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
+                ]
+              }
+            ]
+          }
+        ],
         "groups": [
           {
             "group": " ",
