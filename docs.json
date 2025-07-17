@@ -25,20 +25,36 @@
               {
                 "group": "Get started",
                 "pages": [
-                  "cloud/get-started/get-started-with-tiger-cloud",
-                  "cloud/get-started/start-coding-with-tigerdata",
-                  "cloud/get-started/create-services",
-                  "cloud/get-started/run-queries-from-console",
-                  "cloud/get-started/run-your-workload-in-cloud"
+                  "cloud/tiger/get-started/get-started-with-tiger-cloud",
+                  "cloud/tiger/get-started/start-coding-with-tigerdata",
+                  "cloud/tiger/get-started/create-services",
+                  "cloud/tiger/get-started/run-queries-from-console",
+                  "cloud/tiger/get-started/run-your-workload-in-cloud"
                 ]
               },
               {
                 "group": "Understand",
                 "pages": [
-                  "cloud/understand/tiger-cloud-architecture",
-                  "cloud/understand/implementation-workflow",
-                  "cloud/understand/pricing-and-account-management",
-                  "cloud/understand/changelog"
+                  "cloud/tiger/understand/tiger-cloud-architecture",
+                  "cloud/tiger/understand/implementation-workflow",
+                  "cloud/tiger/understand/pricing-and-account-management",
+                  "cloud/tiger/understand/changelog"
+                ]
+              },
+              {
+                "group": "Manage your data",
+                "pages": [
+                  "open-source/timescaledb/hypertables/understand-hypertables",
+                  "open-source/timescaledb/hypercore/understand-hypercore",
+                  "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
+
+                ]
+              },
+              {
+                "group": "Security",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code"
                 ]
               }
             ]
@@ -54,59 +70,6 @@
                   "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
                 ]
               }
-            ]
-          }
-        ],
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "cloud/cloud"
-            ]
-          },
-          {
-            "group": "Get started",
-            "pages": [
-              "cloud/get-started/get-started-with-tiger-cloud",
-              "cloud/get-started/start-coding-with-tigerdata",
-              "cloud/get-started/create-services",
-              "cloud/get-started/run-queries-from-console",
-              "cloud/get-started/run-your-workload-in-cloud"
-            ]
-          },
-          {
-            "group": "Understand",
-            "pages": [
-              "cloud/understand/tiger-cloud-architecture",
-              "cloud/understand/implementation-workflow",
-              "cloud/understand/pricing-and-account-management",
-              "cloud/understand/changelog"
-
-            ]
-          },
-          {
-            "group": "Manage your data",
-            "pages": [
-              "open-source/timescaledb/hypertables/understand-hypertables",
-              "open-source/timescaledb/hypercore/understand-hypercore",
-              "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
-
-            ]
-          },
-          {
-            "group": "Tutorials",
-            "pages": [
-              "cloud/tutorials/real-time-analytics-energy-consumption",
-              "cloud/tutorials/real-time-analytics-transport",
-              "cloud/tutorials/ingest-real-time-websocket-data",
-              "cloud/tutorials/simulate-iot-sensor-data"
-            ]
-          },
-          {
-            "group": "Security",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code"
             ]
           }
         ]
@@ -134,49 +97,135 @@
                 "group": "Understand",
                 "pages": [
                   "open-source/timescaledb/understand/timescaledb-architecture",
-                  "open-source/timescaledb/understand/design-your-data-architecture"
+                  "open-source/timescaledb/understand/design-your-data-model"
                 ]
               },
               {
                 "group": "Install and update",
                 "pages": [
-                  "open-source/timescaledb/install-self-hosted",
-                  "open-source/timescaledb/update-self-hosted",
-                  "open-source/timescaledb/uninstall-self-hosted"
+                  "open-source/timescaledb/install-and-update/install-self-hosted",
+                  "open-source/timescaledb/install-and-update/update-self-hosted",
+                  "open-source/timescaledb/install-and-update/uninstall-self-hosted"
                 ]
               },
               {
-                "group": "Hypertables",
+                "group": "Data management",
                 "pages": [
-                  "open-source/timescaledb/hypertables/understand-hypertables",
-                  "open-source/timescaledb/hypertables/hypertable-crud"
+                  {
+                    "group": "Hypertables",
+                    "pages": [
+                      "open-source/timescaledb/data-management/hypertables/understand-hypertables",
+                      "open-source/timescaledb/data-management/hypertables/hypertable-crud"
+                    ]
+                  },
+                  {
+                    "group": "Hypercore",
+                    "pages": [
+                      "open-source/timescaledb/data-management/hypercore/understand-hypercore"
+                    ]
+                  },
+                  {
+                    "group": "Continuous aggregates",
+                    "pages": [
+                      "open-source/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
+                    ]
+                  },
+                  {
+                    "group": "Optimize your schema",
+                    "pages": [
+                      "open-source/timescaledb/data-management/optimize-your-schema/optimize-your-schema"
+                    ]
+                  },
+                  {
+                    "group": "Jobs",
+                    "pages": [
+                      "open-source/timescaledb/data-management/jobs/understand-jobs"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Hypercore",
+                "group": "Manage data security",
                 "pages": [
-                  "open-source/timescaledb/hypercore/understand-hypercore"
+                  "open-source/timescaledb/manage-data-security/high-availability",
+                  "open-source/timescaledb/manage-data-security/read-replication",
+                  "open-source/timescaledb/manage-data-security/backup-and-restore"
                 ]
               },
               {
-                "group": "Continuous aggregates",
+                "group": "Configuration",
                 "pages": [
-                  "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
+                  "open-source/timescaledb/configuration/configure-your-deployment",
+                  "open-source/timescaledb/configuration/tune-your-deployment"
+                ]
+              },
+              {
+                "group": "Troubleshooting",
+                "pages": [
+                  "open-source/timescaledb/troubleshooting/troubleshooting"
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "open-source/timescaledb/reference/timescaledb-editions",
+                  "open-source/timescaledb/reference/configuration-parameters",
+                  "open-source/timescaledb/reference/limitations",
+                  "open-source/timescaledb/reference/contribute-to-timescaledb"
                 ]
               }
             ]
           },
           {
             "dropdown": "pgai",
-            "pages": [
-              "open-source/pgai/pgvector-get-started",
-              "open-source/pgai/vectorizer-automate-ai-embeddings"
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "open-source/pgai/pgai"
+                ]
+              },
+              {
+                "group": "Get started",
+                "pages": [
+                  "open-source/pgai/pgvector-get-started",
+                  "open-source/pgai/vectorizer-automate-ai-embeddings"
+                ]
+              }
             ]
           },
           {
             "dropdown": "pgvectorscale",
-            "pages": [
-              "open-source/pgvectorscale/pgvectorscale-get-started"
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "open-source/pgvectorscale/pgvectorscale"
+                ]
+              },
+              {
+                "group": "Get started",
+                "pages": [
+                  "open-source/pgvectorscale/pgvectorscale-get-started"
+                ]
+              }
+            ]
+          },
+          {
+            "dropdown": "TimescaleDB toolkit",
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "open-source/timescaledb-toolkit/timescaledb-toolkit"
+                ]
+              },
+              {
+                "group": "Get started",
+                "pages": [
+                  "./open-source/timescaldb-toolkit/get-started/get-started-with-timescaledb-toolkit"
+                ]
+              }
             ]
           }
         ]
@@ -372,6 +421,12 @@
             "dropdown": "pgvectorscale ",
             "pages": [
               "api-reference/pgvectorscale/pgvectorscale-api-reference"
+            ]
+          },
+          {
+            "dropdown": "TimescaleDB toolkit",
+            "pages": [
+              "api-reference/timescaledb-toolkit/timescaledb-toolkit-api-reference"
             ]
           }
         ]
