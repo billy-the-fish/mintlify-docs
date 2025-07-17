@@ -42,12 +42,39 @@
                 ]
               },
               {
-                "group": "Manage your data",
+                "group": "Data management",
                 "pages": [
-                  "open-source/timescaledb/hypertables/understand-hypertables",
-                  "open-source/timescaledb/hypercore/understand-hypercore",
-                  "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
+                  "open-source/timescaledb/data-management/hypertables/understand-hypertables",
+                  "open-source/timescaledb/data-management/hypercore/understand-hypercore",
+                  "open-source/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
 
+                ]
+              },
+              {
+                "group": "Storage",
+                "pages": [
+                  "cloud/tiger/storage/manage-storage-tiers",
+                  "cloud/tiger/storage/query-tiered-data",
+                  "cloud/tiger/storage/replicas-and-forks-with-tiered-data",
+                  "cloud/tiger/storage/query-another-data-source-fdw"
+                ]
+              },
+              {
+                "group": "AI and vector",
+                "pages": [
+                  "cloud/tiger/ai-vector/add-rag-to-your-service",
+                  "cloud/tiger/ai-vector/speed-up-search"
+                ]
+              },
+              {
+                "group": "Monitor your services",
+                "pages": [
+                  "cloud/tiger/monitoring/monitor-using-console",
+                  "cloud/tiger/monitoring/export-metrics-to-amazon-cloudwatch",
+                  "cloud/tiger/monitoring/export-metrics-to-datadog",
+                  "cloud/tiger/monitoring/export-metrics-to-prometheus",
+                  "cloud/tiger/monitoring/alerting",
+                  "cloud/tiger/monitoring/telemetry"
                 ]
               },
               {
@@ -65,9 +92,9 @@
               {
                 "group": " ",
                 "pages": [
-                  "open-source/timescaledb/hypertables/understand-hypertables",
-                  "open-source/timescaledb/hypercore/understand-hypercore",
-                  "open-source/timescaledb/continuous_aggregates/understand-continuous-aggregates"
+                  "open-source/timescaledb/data-management/hypertables/understand-hypertables",
+                  "open-source/timescaledb/data-management/hypercore/understand-hypercore",
+                  "open-source/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
                 ]
               }
             ]
@@ -319,7 +346,11 @@
           {
             "group": "Business intelligence and data visualization",
             "pages": [
-              "integrations/power-bi"
+              "integrations/power-bi",
+              {
+                "page": "Power BI Website",
+                "href": "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
+              }
               ]
           },
           {
@@ -349,13 +380,13 @@
           {
             "group": "Language-specific integrations",
             "pages": [
-              "cloud/get-started/start-coding-with-tigerdata"
+              "cloud/tiger/get-started/start-coding-with-tigerdata"
             ]
           },
           {
             "group": "Observability and alerting",
             "pages": [
-              "integrations/amazon-cloudwatch",
+              "integrations/cloudwatch",
               "integrations/datadog",
               "integrations/grafana",
               "integrations/prometheus",
@@ -368,7 +399,7 @@
               "integrations/azure-data-studio",
               "integrations/dbeaver",
               "integrations/pgadmin",
-              "integrations/postgres",
+              "integrations/postgresql",
               "integrations/psql",
               "integrations/qstudio"
             ]
@@ -393,7 +424,7 @@
               {
                 "group": " ",
                 "pages": [
-                  "api-reference/api-reference"
+                  "api-reference/timescaledb/timescaledb-api-reference"
                 ]
               },
               {
@@ -413,20 +444,53 @@
           },
           {
             "dropdown": "pgai ",
-            "pages": [
-              "api-reference/pgai/vectorizer-api-reference"
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "api-reference/pgai/pgai-api-reference"
+                ]
+              },
+              {
+                "group": "API Reference",
+                "pages": [
+                  "api-reference/pgai/vectorizer-api-reference"
+                ]
+              }
             ]
           },
           {
             "dropdown": "pgvectorscale ",
-            "pages": [
-              "api-reference/pgvectorscale/pgvectorscale-api-reference"
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "api-reference/pgvectorscale/pgvectorscale-api-reference-landing"
+                ]
+              },
+              {
+                "group": "API Reference",
+                "pages": [
+                  "api-reference/pgvectorscale/pgvectorscale-api-reference"
+                ]
+              }
             ]
           },
           {
             "dropdown": "TimescaleDB toolkit",
-            "pages": [
-              "api-reference/timescaledb-toolkit/timescaledb-toolkit-api-reference"
+            "groups": [
+              {
+                "group": " ",
+                "pages": [
+                  "api-reference/timescaledb-toolkit/timescaledb-toolkit-api-reference-landing"
+                ]
+              },
+              {
+                "group": "API Reference",
+                "pages": [
+                  "api-reference/timescaledb-toolkit/timescaledb-toolkit-api-reference"
+                ]
+              }
             ]
           }
         ]
