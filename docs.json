@@ -292,44 +292,44 @@
         ]
       },
       {
-        "tab": "Migrate and import data",
+        "tab": "Import and connect",
         "groups": [
           {
             "group": " ",
             "pages": [
-              "migration/migration"
+              "import-and-connect/import-and-connect"
             ]
           },
           {
-            "group": "Data lake",
+            "group": "Destination connectors",
             "pages": [
-              "migration/datalake/tigerlake"
+              "import-and-connect/connectors/destination/tigerlake"
             ]
           },
           {
-            "group": "Live migration",
+            "group": "Source connectors",
             "pages": [
-              "migration/live/live-migration"
+              "import-and-connect/connectors/source/sync-from-postgres",
+              "import-and-connect/connectors/source/sync-from-s3"
             ]
           },
           {
-            "group": "Live sync",
+            "group": "Migrate data from a database",
             "pages": [
-              "migration/sync/sync-from-postgres",
-              "migration/sync/sync-from-s3"
+              "import-and-connect/migration/live-migration"
             ]
           },
           {
-            "group": "Import data",
+            "group": "Import data from local files",
             "pages": [
-              "migration/import-and-ingest/import-console",
-              "migration/import-and-ingest/import-terminal"
+              "import-and-connect/import-and-ingest/import-console",
+              "import-and-connect/import-and-ingest/import-terminal"
             ]
           },
           {
-            "group": "Ingest data",
+            "group": "Ingest data from databases",
             "pages": [
-              "migration/import-and-ingest/ingest-terminal"
+              "import-and-connect/import-and-ingest/ingest-terminal"
             ]
           }
         ]
