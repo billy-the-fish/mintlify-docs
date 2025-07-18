@@ -10,28 +10,34 @@ mode: "wide"
 
 Connect and syncronize data between your service and another data source or destination.
 
-<CardGroup cols={3}>
+
+<CardGroup cols={1}>
   <Card
     title="Connect data in your service to your data lake"
-    icon="pen-to-square"
+    icon="upload"
     href="/import-and-connect/connectors/destination/tigerlake"
+  >
+  Synchronization all the data, or specific tables in your Tiger Cloud service to Iceberg tables running in Amazon S3 Tables in real time.
+  </Card>
+</CardGroup>
+
+
+<CardGroup cols={2}>
+  <Card
+    title="Connect data in S3 to your service"
+    icon="download"
+    href="/import-and-connect/connectors/source/sync-from-s3"
   >
   Synchronization all the data, or specific tables in your Tiger Cloud service to Iceberg tables running in Amazon S3 Tables in real time.
   </Card>
   <Card
     title="Connect data in Postgres to your service"
-    icon="table-cells-row-unlock"
+    icon="download"
     href="/import-and-connect/connectors/source/sync-from-postgres"
   >
   Synchronize all the data, or specific tables, from a Postgres database instance to your Tiger Cloud service in real time.
   </Card>
-  <Card
-      title="Connect data in S3 to your service"
-      icon="squirrel"
-      href="/import-and-connect/connectors/source/sync-from-s3"
-  >
-  Synchronize all the data, or specific tables, from S3 to your Tiger Cloud service in real time.
-  </Card>
+
 </CardGroup>
 
 ## Migrate data from a database
@@ -39,14 +45,14 @@ Connect and syncronize data between your service and another data source or dest
 <CardGroup cols={2}>
   <Card
     title="Low downtime migration"
-    icon="pen-to-square"
+    icon="download"
     href="import-and-connect/migration/live-migration"
   >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   </Card>
   <Card
     title="Migrate with downtime"
-    icon="table-cells-row-unlock"
+    icon="download"
     href="import-and-connect/migration/migrate-with-downtime"
   >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -60,14 +66,14 @@ Connect and syncronize data between your service and another data source or dest
 <CardGroup cols={2}>
   <Card
     title="Import data using Console"
-    icon="pen-to-square"
+    icon="download"
     href="import-and-connect/import-and-ingest/import-console"
   >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   </Card>
   <Card
     title="Import data using Terminal"
-    icon="table-cells-row-unlock"
+    icon="download"
     href="/import-and-connect/import-and-ingest/import-terminal"
   >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,7 +85,7 @@ Connect and syncronize data between your service and another data source or dest
 <CardGroup cols={1}>
     <Card
       title="Ingest data using Console"
-      icon="table-cells-row-unlock"
+      icon="download"
       href="/import-and-connect/import-and-ingest/ingest-terminal"
     >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
