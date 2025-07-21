@@ -78,10 +78,46 @@
                 ]
               },
               {
-                "group": "Security",
+                "group": "Manage data security",
                 "pages": [
-                  "essentials/markdown",
-                  "essentials/code"
+                  "cloud/tiger/data-security/high-availability",
+                  "cloud/tiger/data-security/read-scaling",
+                  "cloud/tiger/data-security/rapid-recovery",
+                  "cloud/tiger/data-security/backup",
+                  "cloud/tiger/data-security/restore-and-pitr"
+                ]
+              },
+              {
+                "group": "Secure access to cloud",
+                "pages": [
+                  "cloud/tiger/secure-access/configure-role-based-access",
+                  "cloud/tiger/secure-access/user-authentication",
+                  "cloud/tiger/secure-access/connect-securely-from-any-cloud",
+                  "cloud/tiger/secure-access/connect-to-tiger-cloud-from-your-app",
+                  "cloud/tiger/secure-access/connect-to-a-service-with-stricter-ssl",
+                  "cloud/tiger/secure-access/vpc-peering-and-aws-private-link",
+                  "cloud/tiger/secure-access/setup-an-ip-allow-list"
+                ]
+              },
+              {
+                "group": "Configuration",
+                "pages": [
+                  "cloud/tiger/configuration/tune-your-service"
+                ]
+              },
+              {
+                "group": "Troubleshooting",
+                "pages": [
+                  "cloud/tiger/troubleshooting/troubleshooting"
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "cloud/tiger/reference/tiger-cloud-regions",
+                  "cloud/tiger/reference/contribute-to-tigerdata",
+                  "cloud/tiger/reference/postgres-extensions-in-tiger-cloud",
+                  "cloud/tiger/reference/configuration-parameters"
                 ]
               }
             ]
