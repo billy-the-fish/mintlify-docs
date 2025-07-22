@@ -33,9 +33,9 @@
    Check the output log to see that Kafka Connect is running.
 
 
-1. **Register the Debezium $PG source connector**
+1. **Register the Debezium {PG} source connector**
 
-   Update the `<properties>` for the `<debezium-user>` you created in your $SELF_LONG instance in the following command. 
+   Update the `<properties>` for the `<debezium-user>` you created in your {SELF_LONG} instance in the following command. 
    Then run the command in another Terminal window:
    ```bash
    curl -X POST http://localhost:8083/connectors \
@@ -109,7 +109,7 @@
       2025-04-30 10:40:15,219 INFO   Postgres|accounts|streaming  Processing messages   [io.debezium.connector.postgresql.PostgresStreamingChangeEventSource]
       ```
 
-   1. Watch the events in the accounts topic on your $SELF_LONG instance. 
+   1. Watch the events in the accounts topic on your {SELF_LONG} instance. 
    
       In another Terminal instance, run the following command:  
 
