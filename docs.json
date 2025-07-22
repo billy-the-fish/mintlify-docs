@@ -51,12 +51,140 @@
                 ]
               },
               {
+                "group": "Workloads",
+                "pages": [
+                  "cloud/tiger/workloads/workloads",
+                  {
+                    "group": "Real-time analytics",
+                    "pages": [
+                      "cloud/tiger/workloads/real-time-analytics/energy-consumption",
+                      "cloud/tiger/workloads/real-time-analytics/transport"
+                    ]
+                  },
+                  {
+                    "group": "Time-series",
+                    "pages": [
+                      "cloud/tiger/workloads/time-series/query-bitcoin-blockchain",
+                      "cloud/tiger/workloads/time-series/health-biometical-analysis",
+                      "cloud/tiger/workloads/time-series/anomaly-detection-in-streaming-data"
+                    ]
+                  },
+                  {
+                    "group": "AI",
+                    "pages": [
+                      "cloud/tiger/workloads/ai/financial-forcasting",
+                      "cloud/tiger/workloads/ai/powered-observability",
+                      "cloud/tiger/workloads/ai/real-time-predictive-maintenence"
+                    ]
+                  }
+                ]
+              },
+              {
                 "group": "Storage",
                 "pages": [
                   "cloud/tiger/storage/manage-storage-tiers",
                   "cloud/tiger/storage/query-tiered-data",
                   "cloud/tiger/storage/replicas-and-forks-with-tiered-data",
                   "cloud/tiger/storage/query-another-data-source-fdw"
+                ]
+              },
+              {
+                "group": "Integrations",
+                "pages": [
+                  "cloud/tiger/integrations/integrations",
+                  {
+                    "group": "Configuration and deployment",
+                    "pages": [
+                      "cloud/tiger/integrations/terraform",
+                      "cloud/tiger/integrations/kubernetes"
+                    ]
+                  },
+                  {
+                    "group": "Data engineering and extract, transform, load",
+                    "pages": [
+                      "cloud/tiger/integrations/amazon-sagemaker",
+                      "cloud/tiger/integrations/apache-airflow",
+                      "cloud/tiger/integrations/apache-kafka",
+                      "cloud/tiger/integrations/aws-lambda",
+                      "cloud/tiger/integrations/debezium",
+                      "cloud/tiger/integrations/decodable"
+                    ]
+                  },
+                  {
+                    "group": "Data ingestion and streaming",
+                    "pages": [
+                      "cloud/tiger/integrations/fivetran"
+                    ]
+                  },
+                  {
+                    "group": "Observability and alerting",
+                    "pages": [
+                      "cloud/tiger/integrations/cloudwatch",
+                      "cloud/tiger/integrations/datadog",
+                      "cloud/tiger/integrations/grafana",
+                      "cloud/tiger/integrations/prometheus",
+                      "cloud/tiger/integrations/tableau"
+                    ]
+                  },
+                  {
+                    "group": "Query and administration",
+                    "pages": [
+                      "cloud/tiger/integrations/azure-data-studio",
+                      "cloud/tiger/integrations/dbeaver",
+                      "cloud/tiger/integrations/pgadmin",
+                      "cloud/tiger/integrations/postgresql",
+                      "cloud/tiger/integrations/psql",
+                      "cloud/tiger/integrations/qstudio"
+                    ]
+                  },
+                  {
+                    "group": "Secure connectivity to Tiger Cloud",
+                    "pages": [
+                      "cloud/tiger/integrations/aws",
+                      "cloud/tiger/integrations/corporate-data-center",
+                      "cloud/tiger/integrations/google-cloud",
+                      "cloud/tiger/integrations/microsoft-azure"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Import and connect",
+                "pages": [
+                  "cloud/tiger/import-and-connect/import-and-connect",
+                  {
+                    "group": "Destination connectors",
+                    "pages": [
+                      "cloud/tiger/import-and-connect/connectors/destination/tigerlake"
+                    ]
+                  },
+                  {
+                    "group": "Source connectors",
+                    "pages": [
+                      "cloud/tiger/import-and-connect/connectors/source/sync-from-postgres",
+                      "cloud/tiger/import-and-connect/connectors/source/sync-from-s3"
+                    ]
+                  },
+                  {
+                    "group": "Migrate data from a database",
+                    "pages": [
+                      "cloud/tiger/import-and-connect/migration/live-migration",
+                      "cloud/tiger/import-and-connect/migration/migrate-with-downtime"
+                    ]
+                  },
+                  {
+                    "group": "Import data from local files",
+                    "pages": [
+                      "cloud/tiger/import-and-connect/import-and-ingest/import-console",
+                      "cloud/tiger/import-and-connect/import-and-ingest/import-terminal"
+                    ]
+                  },
+                  {
+                    "group": "Ingest data from databases",
+                    "pages": [
+                      "cloud/tiger/import-and-connect/import-and-ingest/ingest-terminal"
+                    ]
+                  }
                 ]
               },
               {
@@ -303,6 +431,24 @@
                   "open-source/timescaledb/reference/limitations",
                   "open-source/timescaledb/reference/contribute-to-timescaledb"
                 ]
+              },
+              {
+                "group": "API reference",
+                "pages": [
+                  {
+                    "group": "Hypertables",
+                    "pages": [
+                      "open-source/timescaledb/api-reference/hypertables/create_table",
+                      "open-source/timescaledb/api-reference/hypertables/show_chunks"
+                    ]
+                  },
+                  {
+                    "group": "Hypercore",
+                    "pages": [
+                      "open-source/timescaledb/api-reference/hypertables/show_chunks"
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -321,6 +467,13 @@
                   "open-source/pgai/pgvector-get-started",
                   "open-source/pgai/vectorizer-automate-ai-embeddings"
                 ]
+              },
+              {
+                "group": "API reference",
+                "pages": [
+                  "open-source/pgai/api-reference/pgai-api-reference",
+                  "open-source/pgai/api-reference/vectorizer-api-reference"
+                ]
               }
             ]
           },
@@ -337,6 +490,13 @@
                 "group": "Get started",
                 "pages": [
                   "open-source/pgvectorscale/pgvectorscale-get-started"
+                ]
+              },
+              {
+                "group": "API reference",
+                "pages": [
+                  "open-source/pgvectorscale/api-reference/pgvectorscale-api-reference-landing",
+                  "open-source/pgvectorscale/api-reference/pgvectorscale-api-reference"
                 ]
               }
             ]
@@ -355,156 +515,14 @@
                 "pages": [
                   "./open-source/timescaldb-toolkit/get-started/get-started-with-timescaledb-toolkit"
                 ]
+              },
+              {
+                "group": "API reference",
+                "pages": [
+                  "open-source/timescaledb-toolkit/api-reference/timescaledb-toolkit-api-reference-landing",
+                  "open-source/timescaledb-toolkit/api-reference/timescaledb-toolkit-api-reference"
+                ]
               }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Workloads",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "workloads/workloads"
-            ]
-          },
-          {
-            "group": "Real-time analytics",
-            "pages": [
-              "workloads/real-time-analytics/energy-consumption",
-              "workloads/real-time-analytics/transport"
-            ]
-          },
-          {
-            "group": "Time-series",
-            "pages": [
-              "workloads/time-series/query-bitcoin-blockchain",
-              "workloads/time-series/health-biometical-analysis",
-              "workloads/time-series/anomaly-detection-in-streaming-data"
-            ]
-          },
-          {
-            "group": "AI",
-            "pages": [
-              "workloads/ai/financial-forcasting",
-              "workloads/ai/powered-observability",
-              "workloads/ai/real-time-predictive-maintenence"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Import and connect",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "import-and-connect/import-and-connect"
-            ]
-          },
-          {
-            "group": "Destination connectors",
-            "pages": [
-              "import-and-connect/connectors/destination/tigerlake"
-            ]
-          },
-          {
-            "group": "Source connectors",
-            "pages": [
-              "import-and-connect/connectors/source/sync-from-postgres",
-              "import-and-connect/connectors/source/sync-from-s3"
-            ]
-          },
-          {
-            "group": "Migrate data from a database",
-            "pages": [
-              "import-and-connect/migration/live-migration",
-              "import-and-connect/migration/migrate-with-downtime"
-            ]
-          },
-          {
-            "group": "Import data from local files",
-            "pages": [
-              "import-and-connect/import-and-ingest/import-console",
-              "import-and-connect/import-and-ingest/import-terminal"
-            ]
-          },
-          {
-            "group": "Ingest data from databases",
-            "pages": [
-              "import-and-connect/import-and-ingest/ingest-terminal"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Integrations",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "integrations/integrations"
-            ]
-          },
-          {
-            "group": "Configuration and deployment",
-            "pages": [
-              "integrations/terraform",
-              "integrations/kubernetes"
-            ]
-          },
-          {
-            "group": "Data engineering and extract, transform, load",
-            "pages": [
-              "integrations/amazon-sagemaker",
-              "integrations/apache-airflow",
-              "integrations/apache-kafka",
-              "integrations/aws-lambda",
-              "integrations/debezium",
-              "integrations/decodable"
-            ]
-          },
-          {
-            "group": "Data ingestion and streaming",
-            "pages": [
-              "integrations/fivetran"
-            ]
-          },
-          {
-            "group": "Language-specific integrations",
-            "pages": [
-              "cloud/tiger/get-started/start-coding-with-tigerdata"
-            ]
-          },
-          {
-            "group": "Observability and alerting",
-            "pages": [
-              "integrations/cloudwatch",
-              "integrations/datadog",
-              "integrations/grafana",
-              "integrations/prometheus",
-              "integrations/tableau"
-            ]
-          },
-          {
-            "group": "Query and administration",
-            "pages": [
-              "integrations/azure-data-studio",
-              "integrations/dbeaver",
-              "integrations/pgadmin",
-              "integrations/postgresql",
-              "integrations/psql",
-              "integrations/qstudio"
-            ]
-          },
-          {
-            "group": "Secure connectivity to Tiger Cloud",
-            "pages": [
-              "integrations/aws",
-              "integrations/corporate-data-center",
-              "integrations/google-cloud",
-              "integrations/microsoft-azure"
             ]
           }
         ]
@@ -512,81 +530,6 @@
       {
         "tab": "API reference",
         "dropdowns": [
-          {
-            "dropdown": "TimescaleDB ",
-            "groups": [
-              {
-                "group": " ",
-                "pages": [
-                  "api-reference/timescaledb/timescaledb-api-reference"
-                ]
-              },
-              {
-                "group": "Hypertables",
-                "pages": [
-                  "api-reference/timescaledb/hypertables/create_table",
-                  "api-reference/timescaledb/hypertables/show_chunks"
-                ]
-              },
-              {
-                "group": "Hypercore",
-                "pages": [
-                  "api-reference/timescaledb/hypertables/show_chunks"
-                ]
-              }
-            ]
-          },
-          {
-            "dropdown": "pgai ",
-            "groups": [
-              {
-                "group": " ",
-                "pages": [
-                  "api-reference/pgai/pgai-api-reference"
-                ]
-              },
-              {
-                "group": "API Reference",
-                "pages": [
-                  "api-reference/pgai/vectorizer-api-reference"
-                ]
-              }
-            ]
-          },
-          {
-            "dropdown": "pgvectorscale ",
-            "groups": [
-              {
-                "group": " ",
-                "pages": [
-                  "api-reference/pgvectorscale/pgvectorscale-api-reference-landing"
-                ]
-              },
-              {
-                "group": "API Reference",
-                "pages": [
-                  "api-reference/pgvectorscale/pgvectorscale-api-reference"
-                ]
-              }
-            ]
-          },
-          {
-            "dropdown": "TimescaleDB toolkit",
-            "groups": [
-              {
-                "group": " ",
-                "pages": [
-                  "api-reference/timescaledb-toolkit/timescaledb-toolkit-api-reference-landing"
-                ]
-              },
-              {
-                "group": "API Reference",
-                "pages": [
-                  "api-reference/timescaledb-toolkit/timescaledb-toolkit-api-reference"
-                ]
-              }
-            ]
-          }
         ]
       },
       {
