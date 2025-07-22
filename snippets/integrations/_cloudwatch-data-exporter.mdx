@@ -1,6 +1,8 @@
+import { CONSOLE, CLOUD_LONG, SERVICE_LONG } from '/snippets/vars.mdx';
+
 <Procedure>
 
-1.  **In $CONSOLE, open [Exporters][console-integrations]**
+1.  **In {CONSOLE}, open [Exporters][console-integrations]**
 1.  **Click `New exporter`**
 1.  **Select the data type and specify `AWS CloudWatch` for provider**
 
@@ -8,8 +10,8 @@
 
 1.  **Provide your AWS CloudWatch configuration**
 
-    - The AWS region must be the same for your $CLOUD_LONG exporter and AWS CloudWatch Log group.
-    - The exporter name appears in $CONSOLE, best practice is to make this name easily understandable.
+    - The AWS region must be the same for your {CLOUD_LONG} exporter and AWS CloudWatch Log group.
+    - The exporter name appears in {CONSOLE}, best practice is to make this name easily understandable.
     - For CloudWatch credentials, either use an [existing CloudWatch Log group][console-cloudwatch-configuration]
       or [create a new one][console-cloudwatch-create-group]. If you're uncertain, use
       the default values. For more information, see [Working with log groups and log streams][cloudwatch-log-naming].
@@ -109,7 +111,7 @@
     <Procedure>
 
     When you use CloudWatch credentials, you link an Identity and Access Management (IAM)
-    user with access to CloudWatch only with your $SERVICE_LONG:
+    user with access to CloudWatch only with your {SERVICE_LONG}:
 
     1. Retrieve the user information from [IAM > Users in AWS console][list-iam-users].
 

@@ -152,12 +152,6 @@
                 ]
               },
               {
-                "group": "Storage",
-                "pages": [
-                  "cloud/mst/storage/placeholder"
-                ]
-              },
-              {
                 "group": "Monitor your services",
                 "pages": [
                   "cloud/mst/monitoring/viewing-service-logs",
@@ -171,31 +165,39 @@
               {
                 "group": "Manage data security",
                 "pages": [
-                  "cloud/mst/data-security/placeholder"
+                  "cloud/mst/manage-data-security/security",
+                  "cloud/mst/manage-data-security/create-a-replica-for-postgres-service",
+                  "cloud/mst/manage-data-security/failover",
+                  "cloud/mst/manage-data-security/backups"
                 ]
               },
               {
                 "group": "Secure access to cloud",
                 "pages": [
-                  "cloud/mst/secure-access/placeholder"
+                  "cloud/mst/secure-access-to-cloud/user-management",
+                  "cloud/mst/secure-access-to-cloud/vpc-peering",
+                  "cloud/mst/secure-access-to-cloud/aiven-client",
+                  "cloud/mst/secure-access-to-cloud/using-the-rest-api",
+                  "cloud/mst/secure-access-to-cloud/use-postgres-dblink-extension"
                 ]
               },
               {
                 "group": "Configuration",
                 "pages": [
-                  "cloud/mst/configuration/placeholder"
+                  "cloud/mst/configuration/maintenance"
                 ]
               },
               {
                 "group": "Troubleshooting",
                 "pages": [
-                  "cloud/mst/troubleshooting/placeholder"
+                  "cloud/mst/troubleshooting/identify-and-resolve-issues-with-indexes",
+                  "cloud/mst/troubleshooting/troubleshooting"
                 ]
               },
               {
                 "group": "Reference",
                 "pages": [
-                  "cloud/mst/reference/placeholder"
+                  "cloud/mst/reference/supported-extensions"
                 ]
               }
             ]
@@ -417,7 +419,8 @@
           {
             "group": "Migrate data from a database",
             "pages": [
-              "import-and-connect/migration/live-migration"
+              "import-and-connect/migration/live-migration",
+              "import-and-connect/migration/migrate-with-downtime"
             ]
           },
           {

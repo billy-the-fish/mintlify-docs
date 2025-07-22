@@ -1,9 +1,10 @@
+import { PG, SELF_LONG, CAGG } from '/snippets/vars.mdx';
 
-1. **Configure your self-hosted $PG deployment**
+1. **Configure your self-hosted {PG} deployment**
 
    1. Open `postgresql.conf`.
 
-      The $PG configuration files are usually located in:
+      The {PG} configuration files are usually located in:
 
       - Docker: `/home/postgres/pgdata/data/`
       - Linux: `/etc/postgresql/<version>/main/` or `/var/lib/pgsql/<version>/data/`
@@ -27,17 +28,17 @@
       ```
       local replication debezium                         trust  
       ```
-      This permission is for the `debezium` $PG user running on a local or Docker deployment. For more about replication 
-      permissions, see [Configuring $PG to allow replication with the Debezium connector host][debezium-replication-permissions].
+      This permission is for the `debezium` {PG} user running on a local or Docker deployment. For more about replication 
+      permissions, see [Configuring {PG} to allow replication with the Debezium connector host][debezium-replication-permissions].
 
-   1. Restart $PG.
+   1. Restart {PG}.
 
 
-1. **Connect to your $SELF_LONG instance**
+1. **Connect to your {SELF_LONG} instance**
 
    Use [`psql`][psql-connect]. 
 
-1. **Create a Debezium user in $PG**
+1. **Create a Debezium user in {PG}**
 
    Create a user with the `LOGIN` and `REPLICATION` permissions:
 
@@ -61,7 +62,7 @@
       SELECT create_hypertable('accounts', 'created_at');
       ```
 
-      Debezium also works with [$CAGGs][caggs].
+      Debezium also works with [{CAGG}s][caggs].
 
    1. Create a publication and enable a replication slot:
   

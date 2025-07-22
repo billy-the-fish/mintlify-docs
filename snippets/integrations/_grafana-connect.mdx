@@ -1,6 +1,8 @@
+import { SERVICE_SHORT } from '/snippets/vars.mdx';
+
 ## Connect Grafana to Tiger Cloud 
 
-To visualize the results of your queries, enable Grafana to read the data in your $SERVICE_SHORT:
+To visualize the results of your queries, enable Grafana to read the data in your {SERVICE_SHORT}:
 
 <Procedure>
 
@@ -9,7 +11,7 @@ To visualize the results of your queries, enable Grafana to read the data in you
    In your browser, log in to either:
     - Self-hosted Grafana: at `http://localhost:3000/`. The default credentials are `admin`, `admin`.
     - Grafana Cloud: use the URL and credentials you set when you created your account.
-1. **Add your $SERVICE_SHORT as a data source**
+1. **Add your {SERVICE_SHORT} as a data source**
    1. Open `Connections` > `Data sources`, then click `Add new data source`.
    1. Select `PostgreSQL` from the list. 
    1. Configure the connection:

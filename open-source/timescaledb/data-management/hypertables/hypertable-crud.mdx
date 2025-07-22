@@ -7,10 +7,11 @@ keywords: [hypertables, create]
 
 import IntegrationPrereqs from "/snippets/prerequisites/_integration-prereqs.mdx";
 import OldCreateHypertable from "/snippets/changes/_old-api-create-hypertable.mdx";
+import { PG, HYPERTABLE, COLUMNSTORE } from "/snippets/vars.mdx";
 
 # Optimize time-series data in hypertables
 
-Hypertables are designed for real-time analytics, they are $PG tables that automatically partition your data by
+Hypertables are designed for real-time analytics, they are {PG} tables that automatically partition your data by
 time. Typically, you partition hypertables on columns that hold time values.
 [Best practice is to use `timestamptz`][timestamps-best-practice] column type. However, you can also partition on `date`, `integer`
 and `timestamp` types.
@@ -22,7 +23,7 @@ and `timestamp` types.
 
 ## Create a hypertable
 
-Create a [$HYPERTABLE][hypertables-section] for your time-series data using [CREATE TABLE][hypertable-create-table].
+Create a [{HYPERTABLE}][hypertables-section] for your time-series data using [CREATE TABLE][hypertable-create-table].
 For [efficient queries][secondary-indexes] on data in the columnstore, remember to `segmentby` the column you will use
 most often to filter your data:
 
@@ -57,26 +58,26 @@ than the individual tuples. Also, the [columnstore policy][add_columnstore_polic
 SET timescaledb.enable_direct_compress_copy;
 ```
 
-## Optimize cooling data in the $COLUMNSTORE
+## Optimize cooling data in the {COLUMNSTORE}
 
 As the data cools and becomes more suited for analytics, [add a columnstore policy][add_columnstore_policy] so your data
-is automatically converted to the $COLUMNSTORE after a specific time interval. This columnar format enables fast
+is automatically converted to the {COLUMNSTORE} after a specific time interval. This columnar format enables fast
 scanning and aggregation, optimizing performance for analytical workloads while also saving significant storage space.
-In the $COLUMNSTORE conversion, $HYPERTABLE chunks are compressed by more than 90%, and organized for efficient,
+In the {COLUMNSTORE} conversion, {HYPERTABLE} chunks are compressed by more than 90%, and organized for efficient,
 large-scale queries. This columnar format enables fast scanning and aggregation, optimizing performance for analytical
 workloads.
 
-To optimize your data, add a $COLUMNSTORE policy:
+To optimize your data, add a {COLUMNSTORE} policy:
 
 ```sql
 CALL add_columnstore_policy('conditions', after => INTERVAL '1d');
 ```
 
-You can also manually [convert chunks][convert_to_columnstore] in a $HYPERTABLE to the $COLUMNSTORE.
+You can also manually [convert chunks][convert_to_columnstore] in a {HYPERTABLE} to the {COLUMNSTORE}.
 
 ## Alter a hypertable
 
-You can alter a hypertable, for example to add a column, by using the $PG
+You can alter a hypertable, for example to add a column, by using the {PG}
 [`ALTER TABLE`][postgres-altertable] command. This works for both regular and
 distributed hypertables.
 
@@ -109,7 +110,7 @@ ALTER TABLE conditions
 
 ## Drop a hypertable
 
-Drop a hypertable using a standard $PG [`DROP TABLE`][postgres-droptable]
+Drop a hypertable using a standard {PG} [`DROP TABLE`][postgres-droptable]
 command:
 
 ```sql

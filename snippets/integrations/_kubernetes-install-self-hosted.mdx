@@ -1,12 +1,14 @@
-Running $TIMESCALE_DB on Kubernetes is similar to running $PG. This procedure outlines the steps for a non-distributed system. 
+import { TIMESCALE_DB, PG, SELF_LONG, COMPANY } from '/snippets/vars.mdx';
 
-To connect your Kubernetes cluster to $SELF_LONG running in the cluster:
+Running {TIMESCALE_DB} on Kubernetes is similar to running {PG}. This procedure outlines the steps for a non-distributed system. 
+
+To connect your Kubernetes cluster to {SELF_LONG} running in the cluster:
 
 <Procedure>
 
-1. **Create a default namespace for $COMPANY components**
+1. **Create a default namespace for {COMPANY} components**
 
-    1. Create the $COMPANY namespace:
+    1. Create the {COMPANY} namespace:
 
        ```shell
        kubectl create namespace timescale
@@ -39,10 +41,10 @@ To connect your Kubernetes cluster to $SELF_LONG running in the cluster:
    EOF
    ```
 
-1. **Deploy $TIMESCALE_DB as a StatefulSet**
+1. **Deploy {TIMESCALE_DB} as a StatefulSet**
 
-   By default, the [$TIMESCALE_DB Docker image][timescale-docker-image] you are installing on Kubernetes uses the
-   default $PG database, user and password. To deploy $TIMESCALE_DB on Kubernetes, run the following command:
+   By default, the [{TIMESCALE_DB} Docker image][timescale-docker-image] you are installing on Kubernetes uses the
+   default {PG} database, user and password. To deploy {TIMESCALE_DB} on Kubernetes, run the following command:
 
     ```yaml
     kubectl apply -f - <<EOF
@@ -85,7 +87,7 @@ To connect your Kubernetes cluster to $SELF_LONG running in the cluster:
     EOF
     ```
 
-1. **Allow applications to connect by exposing $TIMESCALE_DB within Kubernetes**
+1. **Allow applications to connect by exposing {TIMESCALE_DB} within Kubernetes**
 
   ```yaml
   kubectl apply -f - <<EOF
@@ -115,7 +117,7 @@ To connect your Kubernetes cluster to $SELF_LONG running in the cluster:
    --from-literal=PGPASSWORD=postgres
    ```
 
-1. **Deploy an application that connects to $TIMESCALE_DB**
+1. **Deploy an application that connects to {TIMESCALE_DB}**
 
       ```shell
       kubectl apply -f - <<EOF
@@ -156,13 +158,13 @@ To connect your Kubernetes cluster to $SELF_LONG running in the cluster:
          -- sleep infinity
          ```
 
-    1. Launch the $PG interactive shell within the created `test-pod`:
+    1. Launch the {PG} interactive shell within the created `test-pod`:
 
          ```shell
          kubectl exec -it test-pod -- bash -c "psql -h \$PGHOST -U \$PGUSER -d \$PGDATABASE"
          ```
 
-   You see the $PG interactive terminal.
+   You see the {PG} interactive terminal.
 
 </Procedure>
 

@@ -1,3 +1,5 @@
+import { SERVICE_LONG } from '/snippets/vars.mdx';
+
 1. **Extract the Kafka binaries to a local folder**
 
     ```bash
@@ -18,7 +20,7 @@
 1. **Create Kafka topics**
 
    In another Terminal window, navigate to `<KAFKA_HOME>`, then call `kafka-topics.sh` and create the following topics:
-   - `accounts`: publishes JSON messages that are consumed by the timescale-sink connector and inserted into your $SERVICE_LONG.
+   - `accounts`: publishes JSON messages that are consumed by the timescale-sink connector and inserted into your {SERVICE_LONG}.
    - `deadletter`: stores messages that cause errors and that Kafka Connect workers cannot process.
 
    ```bash
