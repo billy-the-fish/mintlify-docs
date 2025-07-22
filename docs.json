@@ -114,6 +114,7 @@
               {
                 "group": "Reference",
                 "pages": [
+                  "cloud/tiger/reference/glossary",
                   "cloud/tiger/reference/tiger-cloud-regions",
                   "cloud/tiger/reference/contribute-to-tigerdata",
                   "cloud/tiger/reference/postgres-extensions-in-tiger-cloud",
