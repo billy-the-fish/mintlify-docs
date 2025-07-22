@@ -128,9 +128,74 @@
               {
                 "group": " ",
                 "pages": [
-                  "open-source/timescaledb/data-management/hypertables/understand-hypertables",
-                  "open-source/timescaledb/data-management/hypercore/understand-hypercore",
-                  "open-source/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
+                  "cloud/mst/mst"
+                ]
+              },
+              {
+                "group": "Get started",
+                "pages": [
+                  "cloud/mst/get-started/get-started-with-managed-service-for-timescaledb"
+                ]
+              },
+              {
+                "group": "Understand",
+                "pages": [
+                  "cloud/mst/understand/about-managed-service-for-timescaledb",
+                  "cloud/mst/understand/billing"
+                ]
+              },
+              {
+                "group": "Data performance",
+                "pages": [
+                  "cloud/mst/data-performance/ingest-data",
+                  "cloud/mst/data-performance/connection-pools"
+                ]
+              },
+              {
+                "group": "Storage",
+                "pages": [
+                  "cloud/mst/storage/placeholder"
+                ]
+              },
+              {
+                "group": "Monitor your services",
+                "pages": [
+                  "cloud/mst/monitoring/viewing-service-logs",
+                  "cloud/mst/monitoring/visualizing-data-with-google-data-studio",
+                  "cloud/mst/monitoring/visualizing-data-with-grafana",
+                  "cloud/mst/monitoring/logging",
+                  "cloud/mst/monitoring/sending-metrics-to-datadog",
+                  "cloud/mst/monitoring/monitoring-with-prometheus-endpoint"
+                ]
+              },
+              {
+                "group": "Manage data security",
+                "pages": [
+                  "cloud/mst/data-security/placeholder"
+                ]
+              },
+              {
+                "group": "Secure access to cloud",
+                "pages": [
+                  "cloud/mst/secure-access/placeholder"
+                ]
+              },
+              {
+                "group": "Configuration",
+                "pages": [
+                  "cloud/mst/configuration/placeholder"
+                ]
+              },
+              {
+                "group": "Troubleshooting",
+                "pages": [
+                  "cloud/mst/troubleshooting/placeholder"
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "cloud/mst/reference/placeholder"
                 ]
               }
             ]
@@ -378,16 +443,6 @@
             "pages": [
               "integrations/integrations"
             ]
-          },
-          {
-            "group": "Business intelligence and data visualization",
-            "pages": [
-              "integrations/power-bi",
-              {
-                "page": "Power BI Website",
-                "href": "https://www.microsoft.com/en-us/power-platform/products/power-bi/"
-              }
-              ]
           },
           {
             "group": "Configuration and deployment",
