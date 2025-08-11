@@ -44,9 +44,9 @@
               {
                 "group": "Data management",
                 "pages": [
-                  "open-source/timescaledb/data-management/hypertables/understand-hypertables",
-                  "open-source/timescaledb/data-management/hypercore/understand-hypercore",
-                  "open-source/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
+                  "manage-data/timescaledb/data-management/hypertables/understand-hypertables",
+                  "manage-data/timescaledb/data-management/hypercore/understand-hypercore",
+                  "manage-data/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
 
                 ]
               },
@@ -114,7 +114,6 @@
               {
                 "group": "Reference",
                 "pages": [
-                  "cloud/tiger/reference/glossary",
                   "cloud/tiger/reference/tiger-cloud-regions",
                   "cloud/tiger/reference/contribute-to-tigerdata",
                   "cloud/tiger/reference/postgres-extensions-in-tiger-cloud",
@@ -153,6 +152,12 @@
                 ]
               },
               {
+                "group": "Storage",
+                "pages": [
+                  "cloud/mst/storage/storage"
+                ]
+              },
+              {
                 "group": "Monitor your services",
                 "pages": [
                   "cloud/mst/monitoring/viewing-service-logs",
@@ -166,39 +171,31 @@
               {
                 "group": "Manage data security",
                 "pages": [
-                  "cloud/mst/manage-data-security/security",
-                  "cloud/mst/manage-data-security/create-a-replica-for-postgres-service",
-                  "cloud/mst/manage-data-security/failover",
-                  "cloud/mst/manage-data-security/backups"
+                  "cloud/mst/data-security/data-security"
                 ]
               },
               {
                 "group": "Secure access to cloud",
                 "pages": [
-                  "cloud/mst/secure-access-to-cloud/user-management",
-                  "cloud/mst/secure-access-to-cloud/vpc-peering",
-                  "cloud/mst/secure-access-to-cloud/aiven-client",
-                  "cloud/mst/secure-access-to-cloud/using-the-rest-api",
-                  "cloud/mst/secure-access-to-cloud/use-postgres-dblink-extension"
+                  "cloud/mst/secure-access/secure-access"
                 ]
               },
               {
                 "group": "Configuration",
                 "pages": [
-                  "cloud/mst/configuration/maintenance"
+                  "cloud/mst/configuration/configuration"
                 ]
               },
               {
                 "group": "Troubleshooting",
                 "pages": [
-                  "cloud/mst/troubleshooting/identify-and-resolve-issues-with-indexes",
                   "cloud/mst/troubleshooting/troubleshooting"
                 ]
               },
               {
                 "group": "Reference",
                 "pages": [
-                  "cloud/mst/reference/supported-extensions"
+                  "cloud/mst/reference/reference"
                 ]
               }
             ]
@@ -206,37 +203,29 @@
         ]
       },
       {
-        "tab": "Open source",
+        "tab": "Manage data",
         "dropdowns": [
           {
             "dropdown": "TimescaleDB",
             "groups": [
               {
-                "group": " ",
+                "group": "  ",
                 "pages": [
-                  "open-source/open-source"
+                  "manage-data/manage-data"
                 ]
               },
               {
                 "group": "Get started",
                 "pages": [
-                  "open-source/timescaledb/get-started/get-started-with-timescaledb",
-                  "open-source/timescaledb/get-started/timescaledb-read-write-data"
+                  "manage-data/timescaledb/get-started/get-started-with-timescaledb",
+                  "manage-data/timescaledb/get-started/timescaledb-read-write-data"
                 ]
               },
               {
                 "group": "Understand",
                 "pages": [
-                  "open-source/timescaledb/understand/timescaledb-architecture",
-                  "open-source/timescaledb/understand/design-your-data-model"
-                ]
-              },
-              {
-                "group": "Install and update",
-                "pages": [
-                  "open-source/timescaledb/install-and-update/install-self-hosted",
-                  "open-source/timescaledb/install-and-update/update-self-hosted",
-                  "open-source/timescaledb/install-and-update/uninstall-self-hosted"
+                  "manage-data/timescaledb/understand/timescaledb-architecture",
+                  "manage-data/timescaledb/understand/design-your-data-model"
                 ]
               },
               {
@@ -245,64 +234,56 @@
                   {
                     "group": "Hypertables",
                     "pages": [
-                      "open-source/timescaledb/data-management/hypertables/understand-hypertables",
-                      "open-source/timescaledb/data-management/hypertables/hypertable-crud"
+                      "manage-data/timescaledb/data-management/hypertables/understand-hypertables",
+                      "manage-data/timescaledb/data-management/hypertables/hypertable-crud"
                     ]
                   },
                   {
                     "group": "Hypercore",
                     "pages": [
-                      "open-source/timescaledb/data-management/hypercore/understand-hypercore"
+                      "manage-data/timescaledb/data-management/hypercore/understand-hypercore"
                     ]
                   },
                   {
                     "group": "Continuous aggregates",
                     "pages": [
-                      "open-source/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
+                      "manage-data/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
                     ]
                   },
                   {
                     "group": "Optimize your schema",
                     "pages": [
-                      "open-source/timescaledb/data-management/optimize-your-schema/optimize-your-schema"
+                      "manage-data/timescaledb/data-management/optimize-your-schema/optimize-your-schema"
                     ]
                   },
                   {
                     "group": "Jobs",
                     "pages": [
-                      "open-source/timescaledb/data-management/jobs/understand-jobs"
+                      "manage-data/timescaledb/data-management/jobs/understand-jobs"
                     ]
                   }
                 ]
               },
               {
-                "group": "Manage data security",
-                "pages": [
-                  "open-source/timescaledb/manage-data-security/high-availability",
-                  "open-source/timescaledb/manage-data-security/read-replication",
-                  "open-source/timescaledb/manage-data-security/backup-and-restore"
-                ]
-              },
-              {
                 "group": "Configuration",
                 "pages": [
-                  "open-source/timescaledb/configuration/configure-your-deployment",
-                  "open-source/timescaledb/configuration/tune-your-deployment"
+                  "manage-data/timescaledb/configuration/configure-timescaledb",
+                  "manage-data/timescaledb/configuration/tune-timescaledb"
                 ]
               },
               {
                 "group": "Troubleshooting",
                 "pages": [
-                  "open-source/timescaledb/troubleshooting/troubleshooting"
+                  "manage-data/timescaledb/troubleshooting/troubleshooting"
                 ]
               },
               {
                 "group": "Reference",
                 "pages": [
-                  "open-source/timescaledb/reference/timescaledb-editions",
-                  "open-source/timescaledb/reference/configuration-parameters",
-                  "open-source/timescaledb/reference/limitations",
-                  "open-source/timescaledb/reference/contribute-to-timescaledb"
+                  "manage-data/timescaledb/reference/timescaledb-editions",
+                  "manage-data/timescaledb/reference/configuration-parameters",
+                  "manage-data/timescaledb/reference/limitations",
+                  "manage-data/timescaledb/reference/contribute-to-timescaledb"
                 ]
               }
             ]
@@ -313,14 +294,14 @@
               {
                 "group": " ",
                 "pages": [
-                  "open-source/pgai/pgai"
+                  "manage-data/pgai/pgai"
                 ]
               },
               {
                 "group": "Get started",
                 "pages": [
-                  "open-source/pgai/pgvector-get-started",
-                  "open-source/pgai/vectorizer-automate-ai-embeddings"
+                  "manage-data/pgai/pgvector-get-started",
+                  "manage-data/pgai/vectorizer-automate-ai-embeddings"
                 ]
               }
             ]
@@ -331,13 +312,13 @@
               {
                 "group": " ",
                 "pages": [
-                  "open-source/pgvectorscale/pgvectorscale"
+                  "manage-data/pgvectorscale/pgvectorscale"
                 ]
               },
               {
                 "group": "Get started",
                 "pages": [
-                  "open-source/pgvectorscale/pgvectorscale-get-started"
+                  "manage-data/pgvectorscale/pgvectorscale-get-started"
                 ]
               }
             ]
@@ -348,13 +329,13 @@
               {
                 "group": " ",
                 "pages": [
-                  "open-source/timescaledb-toolkit/timescaledb-toolkit"
+                  "manage-data/timescaledb-toolkit/timescaledb-toolkit"
                 ]
               },
               {
                 "group": "Get started",
                 "pages": [
-                  "./open-source/timescaldb-toolkit/get-started/get-started-with-timescaledb-toolkit"
+                  "manage-data/timescaledb-toolkit/get-started-with-timescaledb-toolkit"
                 ]
               }
             ]
@@ -420,8 +401,7 @@
           {
             "group": "Migrate data from a database",
             "pages": [
-              "import-and-connect/migration/live-migration",
-              "import-and-connect/migration/migrate-with-downtime"
+              "import-and-connect/migration/live-migration"
             ]
           },
           {
@@ -506,6 +486,55 @@
               "integrations/corporate-data-center",
               "integrations/google-cloud",
               "integrations/microsoft-azure"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Self-host",
+        "groups": [
+          {
+            "group": " ",
+            "pages": [
+              "self-host/self-host"
+            ]
+          },
+          {
+            "group": "Install and update",
+            "pages": [
+              "self-host/timescaledb/install-and-update/install-self-hosted",
+              "self-host/timescaledb/install-and-update/update-self-hosted",
+              "self-host/timescaledb/install-and-update/uninstall-self-hosted"
+            ]
+          },
+          {
+            "group": "Manage data security",
+            "pages": [
+              "self-host/timescaledb/manage-data-security/high-availability",
+              "self-host/timescaledb/manage-data-security/read-replication",
+              "self-host/timescaledb/manage-data-security/backup-and-restore"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "self-host/timescaledb/configuration/configure-your-deployment",
+              "self-host/timescaledb/configuration/tune-your-deployment"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "self-host/timescaledb/troubleshooting/troubleshooting"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "self-host/timescaledb/reference/timescaledb-editions",
+              "self-host/timescaledb/reference/configuration-parameters",
+              "self-host/timescaledb/reference/limitations",
+              "self-host/timescaledb/reference/contribute-to-timescaledb"
             ]
           }
         ]
