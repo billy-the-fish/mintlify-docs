@@ -352,15 +352,10 @@
             ]
           },
           {
-            "group": "Real-time analytics",
-            "pages": [
-              "workloads/real-time-analytics/energy-consumption",
-              "workloads/real-time-analytics/transport"
-            ]
-          },
-          {
             "group": "Time-series",
             "pages": [
+              "workloads/real-time-analytics/energy-consumption",
+              "workloads/real-time-analytics/transport",
               "workloads/time-series/query-bitcoin-blockchain",
               "workloads/time-series/health-biometical-analysis",
               "workloads/time-series/anomaly-detection-in-streaming-data"
