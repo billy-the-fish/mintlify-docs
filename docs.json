@@ -206,7 +206,7 @@
         "tab": "Manage data",
         "dropdowns": [
           {
-            "dropdown": "TimescaleDB",
+            "dropdown": "Time-series",
             "groups": [
               {
                 "group": "  ",
@@ -265,13 +265,6 @@
                 ]
               },
               {
-                "group": "Configuration",
-                "pages": [
-                  "manage-data/timescaledb/configuration/configure-timescaledb",
-                  "manage-data/timescaledb/configuration/tune-timescaledb"
-                ]
-              },
-              {
                 "group": "Troubleshooting",
                 "pages": [
                   "manage-data/timescaledb/troubleshooting/troubleshooting"
@@ -289,7 +282,7 @@
             ]
           },
           {
-            "dropdown": "pgai",
+            "dropdown": "AI",
             "groups": [
               {
                 "group": " ",
@@ -305,45 +298,11 @@
                 ]
               }
             ]
-          },
-          {
-            "dropdown": "pgvectorscale",
-            "groups": [
-              {
-                "group": " ",
-                "pages": [
-                  "manage-data/pgvectorscale/pgvectorscale"
-                ]
-              },
-              {
-                "group": "Get started",
-                "pages": [
-                  "manage-data/pgvectorscale/pgvectorscale-get-started"
-                ]
-              }
-            ]
-          },
-          {
-            "dropdown": "TimescaleDB toolkit",
-            "groups": [
-              {
-                "group": " ",
-                "pages": [
-                  "manage-data/timescaledb-toolkit/timescaledb-toolkit"
-                ]
-              },
-              {
-                "group": "Get started",
-                "pages": [
-                  "manage-data/timescaledb-toolkit/get-started-with-timescaledb-toolkit"
-                ]
-              }
-            ]
           }
         ]
       },
       {
-        "tab": "Workloads",
+        "tab": "Tutorials",
         "groups": [
           {
             "group": " ",
