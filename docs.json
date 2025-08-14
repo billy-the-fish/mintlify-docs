@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "aspen",
   "name": "Billy the fish",
   "colors": {
     "primary": "#16A34A",
@@ -12,16 +12,12 @@
     "tabs": [
       {
         "tab": "Cloud",
-        "dropdowns": [
+        "menu": [
           {
-            "dropdown": "Tiger Cloud",
+            "item": "Tiger Cloud",
+            "description": "The fastest Postgres cloud, powered by Tiger Postgres",
+            "page": "cloud/tiger/get-started/get-started-with-tiger-cloud",
             "groups": [
-              {
-                "group": " ",
-                "pages": [
-                  "cloud/cloud"
-                ]
-              },
               {
                 "group": "Get started",
                 "pages": [
@@ -47,7 +43,6 @@
                   "manage-data/timescaledb/data-management/hypertables/understand-hypertables",
                   "manage-data/timescaledb/data-management/hypercore/understand-hypercore",
                   "manage-data/timescaledb/data-management/continuous-aggregates/understand-continuous-aggregates"
-
                 ]
               },
               {
@@ -123,7 +118,8 @@
             ]
           },
           {
-            "dropdown": "MST",
+            "item": "MST",
+            "description": "TimescaleDB hosted on Azure and GCP",
             "groups": [
               {
                 "group": " ",
@@ -198,6 +194,35 @@
                   "cloud/mst/reference/reference"
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API References",
+        "menu": [
+          {
+            "item": "API References",
+            "groups": [
+              {
+                "group": "API Reference",
+                "icon": "square-terminal",
+                "pages": [
+                  "api-reference/get",
+                  "api-reference/post",
+                  "api-reference/delete"
+                ]
+              }
+            ]
+          },
+          {
+            "item": "SDKs",
+            "icon": "code",
+            "description": "SDKs are used to interact with the API.",
+            "pages": [
+              "sdk/fetch",
+              "sdk/create",
+              "sdk/delete"
             ]
           }
         ]
@@ -616,6 +641,7 @@
       "claude"
     ]
   },
+  "breadcrumbs": true,
   "logo": {
     "light": "https://assets.timescale.com/timescale-web/shared/logo/tigerdata-logo-black.svg",
     "dark": "https://assets.timescale.com/timescale-web/shared/logo/tigerdata-logo-white.svg"
