@@ -26,7 +26,6 @@
                 "group": "Get started",
                 "pages": [
                   "cloud/tiger/get-started/get-started-with-tiger-cloud",
-                  "cloud/tiger/get-started/start-coding-with-tigerdata",
                   "cloud/tiger/get-started/create-services",
                   "cloud/tiger/get-started/run-queries-from-console",
                   "cloud/tiger/get-started/run-your-workload-in-cloud"
@@ -331,50 +330,7 @@
         ]
       },
       {
-        "tab": "Import and connect",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "import-and-connect/import-and-connect"
-            ]
-          },
-          {
-            "group": "Destination connectors",
-            "pages": [
-              "import-and-connect/connectors/destination/tigerlake"
-            ]
-          },
-          {
-            "group": "Source connectors",
-            "pages": [
-              "import-and-connect/connectors/source/sync-from-postgres",
-              "import-and-connect/connectors/source/sync-from-s3"
-            ]
-          },
-          {
-            "group": "Migrate data from a database",
-            "pages": [
-              "import-and-connect/migration/live-migration"
-            ]
-          },
-          {
-            "group": "Import data from local files",
-            "pages": [
-              "import-and-connect/import-and-ingest/import-console",
-              "import-and-connect/import-and-ingest/import-terminal"
-            ]
-          },
-          {
-            "group": "Ingest data from databases",
-            "pages": [
-              "import-and-connect/import-and-ingest/ingest-terminal"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Integrations",
+        "tab": "Integration",
         "groups": [
           {
             "group": " ",
@@ -383,63 +339,95 @@
             ]
           },
           {
+            "group": "Destination connectors",
+            "pages": [
+              "integrations/connectors/destination/tigerlake"
+            ]
+          },
+          {
+            "group": "Source connectors",
+            "pages": [
+              "integrations/connectors/source/sync-from-postgres",
+              "integrations/connectors/source/sync-from-s3"
+            ]
+          },
+          {
+            "group": "Migrate data from a database",
+            "pages": [
+              "integrations/migration/live-migration"
+            ]
+          },
+          {
+            "group": "Import data from local files",
+            "pages": [
+              "integrations/integrate/import-and-ingest/import-console",
+              "integrations/integrate/import-and-ingest/import-terminal"
+            ]
+          },
+          {
+            "group": "Ingest data from databases",
+            "pages": [
+              "integrations/integrate/import-and-ingest/ingest-terminal"
+            ]
+          },
+          {
+            "group": "Coding",
+            "pages": [
+              "integrations/code/start-coding-with-tigerdata"
+            ]
+          },
+          {
             "group": "Configuration and deployment",
             "pages": [
-              "integrations/terraform",
-              "integrations/kubernetes"
+              "integrations/integrate/terraform",
+              "integrations/integrate/kubernetes"
             ]
           },
           {
             "group": "Data engineering and extract, transform, load",
             "pages": [
-              "integrations/amazon-sagemaker",
-              "integrations/apache-airflow",
-              "integrations/apache-kafka",
-              "integrations/aws-lambda",
-              "integrations/debezium",
-              "integrations/decodable"
+              "integrations/integrate/amazon-sagemaker",
+              "integrations/integrate/apache-airflow",
+              "integrations/integrate/apache-kafka",
+              "integrations/integrate/aws-lambda",
+              "integrations/integrate/debezium",
+              "integrations/integrate/decodable"
             ]
           },
           {
             "group": "Data ingestion and streaming",
             "pages": [
-              "integrations/fivetran"
-            ]
-          },
-          {
-            "group": "Language-specific integrations",
-            "pages": [
-              "cloud/tiger/get-started/start-coding-with-tigerdata"
+              "integrations/integrate/fivetran"
             ]
           },
           {
             "group": "Observability and alerting",
             "pages": [
-              "integrations/cloudwatch",
-              "integrations/datadog",
-              "integrations/grafana",
-              "integrations/prometheus",
-              "integrations/tableau"
+              "integrations/integrate/cloudwatch",
+              "integrations/integrate/datadog",
+              "integrations/integrate/grafana",
+              "integrations/integrate/prometheus",
+              "integrations/integrate/tableau"
             ]
           },
           {
             "group": "Query and administration",
             "pages": [
-              "integrations/azure-data-studio",
-              "integrations/dbeaver",
-              "integrations/pgadmin",
-              "integrations/postgresql",
-              "integrations/psql",
-              "integrations/qstudio"
+              "integrations/integrate/azure-data-studio",
+              "integrations/integrate/dbeaver",
+              "integrations/integrate/pgadmin",
+              "integrations/integrate/postgresql",
+              "integrations/integrate/psql",
+              "integrations/integrate/qstudio"
             ]
           },
           {
             "group": "Secure connectivity to Tiger Cloud",
             "pages": [
-              "integrations/aws",
-              "integrations/corporate-data-center",
-              "integrations/google-cloud",
-              "integrations/microsoft-azure"
+              "integrations/integrate/aws",
+              "integrations/integrate/corporate-data-center",
+              "integrations/integrate/google-cloud",
+              "integrations/integrate/microsoft-azure"
             ]
           }
         ]
