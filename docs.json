@@ -360,14 +360,14 @@
           {
             "group": "Import data from local files",
             "pages": [
-              "integrations/integrate/import-and-ingest/import-console",
-              "integrations/integrate/import-and-ingest/import-terminal"
+              "integrations/import-and-ingest/import-console",
+              "integrations/import-and-ingest/import-terminal"
             ]
           },
           {
             "group": "Ingest data from databases",
             "pages": [
-              "integrations/integrate/import-and-ingest/ingest-terminal"
+              "integrations/import-and-ingest/ingest-terminal"
             ]
           },
           {
