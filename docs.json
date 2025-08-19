@@ -20,8 +20,7 @@
               {
                 "group": "Get started",
                 "pages": [
-                  "cloud/tiger/get-started/get-started-with-tiger-cloud",
-                  "cloud/tiger/get-started/create-services",
+                  "cloud/tiger/get-started/get-started-with-cloud",
                   "cloud/tiger/get-started/run-queries-from-console",
                   "cloud/tiger/get-started/run-your-workload-in-cloud"
                 ]
@@ -262,7 +261,6 @@
                 "group": "Get started",
                 "pages": [
                   "cloud/tiger/get-started/get-started-with-tiger-cloud",
-                  "cloud/tiger/get-started/create-services",
                   "cloud/tiger/get-started/run-queries-from-console",
                   "cloud/tiger/get-started/run-your-workload-in-cloud"
                 ]
@@ -840,6 +838,26 @@
       "chatgpt",
       "claude"
     ]
+  },
+  "metadata": {
+    "products": {
+      "cloud_aws": {
+        "name": "Cloud: AWS",
+        "color": "#16A34A"
+      },
+      "cloud_azure": {
+        "name": "Cloud: Azure",
+        "color": "#16A34A"
+      },
+      "self_hosted": {
+        "name": "Self-hosted products", 
+        "color": "#07C983"
+      },
+      "mst": {
+        "name": "MST",
+        "color": "#15803D"
+      }
+    }
   },
   "logo": {
     "light": "https://assets.timescale.com/timescale-web/shared/logo/tigerdata-logo-black.svg",
