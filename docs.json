@@ -264,6 +264,15 @@
                 ]
               },
               {
+                "group": "Import and ingest data",
+                "pages": [
+                  "manage-data/timescaledb/data-management/import-and-ingest/live-migration",
+                  "manage-data/timescaledb/data-management/import-and-ingest/import-console",
+                  "manage-data/timescaledb/data-management/import-and-ingest/import-terminal",
+                  "manage-data/timescaledb/data-management/import-and-ingest/ingest-terminal"
+                ]
+              },
+              {
                 "group": "Troubleshooting",
                 "pages": [
                   "manage-data/timescaledb/troubleshooting/troubleshooting"
@@ -349,25 +358,6 @@
             "pages": [
               "integrations/connectors/source/sync-from-postgres",
               "integrations/connectors/source/sync-from-s3"
-            ]
-          },
-          {
-            "group": "Migrate data from a database",
-            "pages": [
-              "integrations/migration/live-migration"
-            ]
-          },
-          {
-            "group": "Import data from local files",
-            "pages": [
-              "integrations/import-and-ingest/import-console",
-              "integrations/import-and-ingest/import-terminal"
-            ]
-          },
-          {
-            "group": "Ingest data from databases",
-            "pages": [
-              "integrations/import-and-ingest/ingest-terminal"
             ]
           },
           {
